@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Survivorship-free multi-decade backtests of the live-tested systematic strategies.">
+<title>Quant Lines — backtest</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%E2%97%86%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="masthead">
+  <a class="brand" href="index.html">◆ QUANT&nbsp;LINES</a>
+  <nav><a href="index.html">Live</a><a href="signals.html">Signals</a><a href="backtest.html">Backtest</a><a href="index.html#verify">Verify&nbsp;✓</a></nav>
+</div>
+
+<h1>Backtest</h1>
+<p class="subtitle">Survivorship-free backtests over three periods. Each period shows only
+strategies with data for it. Growth of 1, log scale.</p>
+<p class="note">The live books on the <a href="index.html">Live</a> page run the same frozen
+rules; these research tracks extend them decades back on survivorship-free universes
+(delisted names included), reported as the median of three rotation-grid phases.</p>
+
+<div class="period-tabs" id="tabs"></div>
+
+<div class="chartwrap"><div id="chart"></div></div>
+<div class="legend" id="legend"></div>
+<p class="note" id="pnote"></p>
+
+<h2>Metrics</h2>
+<div id="table"></div>
+<p class="footnotes">
+  <b>Total ×</b> growth of 1 · <b>CAGR</b> annualised · <b>Sharpe</b> risk-adjusted return ·
+  <b>Max DD</b> deepest peak-to-trough · <b>Martin</b> return / ulcer (drawdown-adjusted) ·
+  <b>Ulcer</b> drawdown depth index · <b>Dom top-1 / top-2</b> share of days the line
+  ranked #1 / top-2 by cumulative growth among the lines shown (our domination coefficients).
+  Total × is concentration-lottery noisy over long spans — read risk axes and domination first.
+</p>
+
+<div class="disclaimer">
+  Historical backtests, for information and research purposes only — all results on this
+  page are simulated. Nothing here is investment advice, or an offer or solicitation to
+  buy or sell any security. Survivorship-free universes, point-in-time membership,
+  15&nbsp;bps trading costs per side; no taxes or broker fees. Past performance does not
+  guarantee future results. Prices come from public data sources and may contain errors.
+  Strategy internals are intentionally not shown.
+</div>
+
+<script src="app.js"></script>
+<script>
+fetch("data/history.json").then(r => r.json()).then(d => {
+  const periods = Object.keys(d.periods);
+  const tabsEl = document.getElementById("tabs");
+  let chart = null;
+  function show(p) {
+    document.querySelectorAll("#tabs button").forEach(b =>
+      b.classList.toggle("on", b.dataset.p === p));
+    const pd = d.periods[p], lines = pd.lines;
+    const el = document.getElementById("chart"); el.innerHTML = "";
+    chart = makeChart(el, lines, {height: 400});
+    makeLegend(document.getElementById("legend"), lines, chart);
+    makeTable(document.getElementById("table"), lines, true);
+    document.getElementById("pnote").textContent =
+      "Period " + p + ". " + lines.length + " lines. " +
+      (p.startsWith("1999") ? "Only NASDAQ-side strategies have survivorship-free data this far back."
+       : "All strategies and both benchmarks available.");
+  }
+  periods.forEach((p, i) => {
+    const b = document.createElement("button");
+    b.textContent = p; b.dataset.p = p;
+    b.onclick = () => show(p);
+    tabsEl.appendChild(b);
+  });
+  show(periods[0]);                    // default: the longest, 1999-2026
+});
+</script>
+</body>
+</html>

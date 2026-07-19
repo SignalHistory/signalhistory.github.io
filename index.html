@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Public real-time test of systematic trading strategies — $10,000 live portfolios, daily signals, full trade history.">
+<title>Quant Lines — live strategy test</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%E2%97%86%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="masthead">
+  <a class="brand" href="index.html">◆ QUANT&nbsp;LINES</a>
+  <nav><a href="index.html">Live</a><a href="signals.html">Signals</a><a href="backtest.html">Backtest</a><a href="#verify">Verify&nbsp;✓</a></nav>
+</div>
+
+<h1>Live strategy test</h1>
+<p class="subtitle">Systematic strategies traded in real time — $10,000 each, tracked every trading day. Growth on a log scale; hover any chart for portfolio values.</p>
+<p class="dateline" id="freshline"></p>
+
+<h2>This year — $10,000 on 2026-01-02</h2>
+<div class="chartwrap"><div id="chart26"></div></div>
+<div class="legend" id="legend26"></div>
+<p class="note">Every line rebased to $10,000 at the start of 2026. Click a legend entry to hide or show a line (applies to both charts). Click a table column to sort.</p>
+<div id="table26"></div>
+
+<h2>Current portfolios &amp; signals</h2>
+<div class="period-tabs" id="booktabs"></div>
+<div id="bookview"></div>
+
+<h2 id="verify">Verify this track</h2>
+<div class="vbox">
+<p>Every trading day this entire site — including the machine-readable
+signals — is committed to a public GitHub repository. Git history makes the
+timestamps immutable: a signal cannot be inserted or altered after the fact.</p>
+<ol>
+<li>Open the <b>commit history</b> — every daily update is timestamped by GitHub, not by us.</li>
+<li>Take <code>data/signals_latest.json</code> from any past commit: positions and trades of that day, per strategy.</li>
+<li>Compare the published trade prices with market data for the days that followed.</li>
+</ol>
+<div class="btnrow">
+<a class="btn primary" href="https://github.com/SignalHistory/signalhistory.github.io/commits/main" rel="noopener">Commit history on GitHub&nbsp;→</a>
+<a class="btn" href="data/signals_latest.json">Latest signals (JSON)</a>
+<a class="btn" href="data/signals_journal.json">Full journal (JSON)</a>
+<a class="btn" href="https://t.me/quant_signals_live" rel="noopener">Telegram: @quant_signals_live</a>
+</div>
+</div>
+
+<h2>Full track — $10,000 on 2020-01-02</h2>
+<div class="chartwrap"><div id="chart20"></div></div>
+<div class="legend" id="legend20"></div>
+<p class="note" id="livenote"></p>
+<div id="table20"></div>
+<p class="footnotes"><b>Value</b> current worth of $10,000 invested at the
+window start · <b>Total ×</b> growth multiple · <b>CAGR</b> annualised
+return · <b>Sharpe</b> risk-adjusted return · <b>Max DD</b> deepest
+peak-to-trough loss · <b>Martin</b> return / ulcer (drawdown-adjusted) ·
+<b>Ulcer</b> drawdown depth index · <b>Dom top-1 / top-2</b> share of days
+the line ranked #1 / top-2 by cumulative growth among the lines shown.
+<br><b>MAG7</b> is a synthetic Magnificent-Seven proxy: the 7 largest
+companies of the universe, equal weight, rebalanced at quarterly snapshots,
+no costs.</p>
+
+<div class="disclaimer">
+  Public real-time test of systematic strategies, for information and research purposes
+  only. Nothing here is investment advice, or an offer or solicitation to buy or sell any
+  security. Results before the live marker are simulated under frozen rules; results after
+  it come from a live test with virtual capital. Performance figures include 15&nbsp;bps
+  trading costs per side but no taxes or fees of any broker. Past performance does not
+  guarantee future results. Prices come from public data sources and may contain errors.
+  Strategy internals are intentionally not shown.
+</div>
+
+<script src="app.js"></script>
+<script>
+// short-window table: no annualized metrics (a 6-month CAGR or Martin
+// annualizes into absurd numbers) — Value and Total are the honest reads
+const COLS26 = [
+  ["value", "Value", fmtUsd], ["total_pct", "Total", fmtSignedPct],
+  ["Sharpe", "Sharpe", fmtNum], ["MaxDD", "Max DD", fmtPct],
+  ["dom_top1", "Dom top-1", fmtDom], ["dom_top2", "Dom top-2", fmtDom],
+];
+const COLS20 = [
+  ["value", "Value", fmtUsd], ["total_x", "Total ×", fmtX],
+  ["CAGR", "CAGR", fmtPct], ["Sharpe", "Sharpe", fmtNum],
+  ["MaxDD", "Max DD", fmtPct], ["Martin", "Martin", fmtNum],
+  ["Ulcer", "Ulcer", v => v == null ? "" : v.toFixed(2)],
+  ["dom_top1", "Dom top-1", fmtDom], ["dom_top2", "Dom top-2", fmtDom],
+];
+const BOOKS = ["6f", "momAB", "7fh", "MAG7"];
+
+function bookDot(name) {
+  return `<span class="dot" style="background:${COLORS[name]}"></span>`;
+}
+
+// one tab = one book: its headline, current positions AND its own latest
+// trades right below (signals belong to the portfolio the user is looking at)
+function renderBooks(live, lines) {
+  const tabs = document.getElementById("booktabs");
+  const view = document.getElementById("bookview");
+  const have = live ? live.strategies : {};
+
+  function show(name) {
+    tabs.querySelectorAll("button").forEach(b =>
+      b.classList.toggle("on", b.dataset.b === name));
+    const meta = lines.find(l => l.code === name) || {};
+    const s = have[name];
+    if (!s) {
+      view.innerHTML =
+        `<p class="dateline">${bookDot(name)} <b>${name}</b> ` +
+        `<span class="ix">${meta.index || ""}</span></p>` +
+        '<p class="note">This live book is being connected — its research ' +
+        "track is already on the charts.</p>";
+      return;
+    }
+    let h = `<p class="dateline">${bookDot(name)} <b>${name}</b> ` +
+            `<span class="ix">${meta.index || ""}</span> · ` +
+            `started ${fmtUsd(live.start_capital)} on ${live.start} · ` +
+            `now <b>${fmtUsd(s.value)}</b> (${fmtSignedPct(s.total_return)}) · ` +
+            `YTD ${fmtSignedPct(s.ytd)} · as of ${s.as_of || live.as_of}</p>`;
+    h += "<h3>Portfolio</h3>";
+    h += '<table class="sig"><thead><tr><th>Ticker</th><th>Entered</th>' +
+         "<th>Value</th><th>Weight</th><th>P&amp;L</th></tr></thead><tbody>";
+    s.positions.forEach(p => {
+      h += `<tr><td class="l">${p.ticker}</td><td>${p.entry_date || ""}</td>` +
+           `<td>${fmtUsd(p.value)}</td><td>${fmtPct(p.weight)}</td>` +
+           `<td class="${p.pnl_pct >= 0 ? "up" : "dn"}">${fmtSignedPct(p.pnl_pct)}</td></tr>`;
+    });
+    if (s.cash > s.value * 0.001) {
+      h += `<tr class="bench"><td class="l">(cash)</td><td></td>` +
+           `<td>${fmtUsd(s.cash)}</td><td>${fmtPct(s.cash / s.value)}</td><td></td></tr>`;
+    }
+    h += "</tbody></table>";
+    h += `<h3>Latest signals — ${name}</h3>`;
+    if (s.trades_last && s.trades_last.length) {
+      h += '<table class="sig"><thead><tr><th>Date</th><th>Side</th><th>Ticker</th>' +
+           "<th>Shares</th><th>Price</th><th>Cost</th></tr></thead><tbody>";
+      s.trades_last.slice().reverse().forEach(t => {
+        h += `<tr><td>${t.date}</td>` +
+             `<td class="${t.side === "BUY" ? "up" : "dn"}">${t.side}</td>` +
+             `<td class="l">${t.ticker}</td><td>${t.shares.toFixed(2)}</td>` +
+             `<td>$${t.price.toFixed(2)}</td><td>$${t.cost.toFixed(2)}</td></tr>`;
+      });
+      h += "</tbody></table>";
+    } else {
+      h += '<p class="note">This book rebalances quarterly — no daily trades.</p>';
+    }
+    h += `<p>Signals are generated live every trading day since ${s.live_since || live.live_since}. ` +
+         `<a href="signals.html">Full signals history →</a></p>`;
+    view.innerHTML = h;
+  }
+
+  BOOKS.forEach(name => {
+    const b = document.createElement("button");
+    b.textContent = name;
+    b.dataset.b = name;
+    b.onclick = () => show(name);
+    tabs.appendChild(b);
+  });
+  show(BOOKS.find(n => have[n]) || BOOKS[0]);
+}
+
+fetch("data/history.json").then(r => r.json()).then(d => {
+  const m = d.main, lines = m.lines;
+  const boundary = m.live_boundary ? new Date(m.live_boundary).getTime() / 1000 : null;
+  const endTs = new Date(m.end).getTime() / 1000;
+  const t26 = new Date(m.win2026.start).getTime() / 1000;
+
+  document.getElementById("freshline").textContent =
+    "Data through " + m.end + " · updated daily after the US close · live since " +
+    m.live_boundary + ".";
+
+  const chart26 = makeChart(document.getElementById("chart26"), lines,
+                            {height: 380, boundary: boundary, dollar: 10000});
+  chart26.setRange(t26, endTs);
+  const chart20 = makeChart(document.getElementById("chart20"), lines,
+                            {height: 420, boundary: boundary, dollar: 10000});
+
+  // window-specific line objects (so each legend/table sorts by ITS window)
+  const lines26 = lines.map(l => Object.assign(
+    {code: l.code, kind: l.kind, index: l.index, gray: l.gray},
+    m.win2026.metrics[l.code] || {}));
+
+  // one controller keeps both charts and both legends in sync
+  const legends = [];
+  const ctl = {
+    refreshAll: true,
+    isHidden: c => chart26.isHidden(c),
+    toggle: c => {
+      chart26.toggle(c); chart20.toggle(c);
+      legends.forEach(l => l.refresh());
+    },
+  };
+  legends.push(makeLegend(document.getElementById("legend26"), lines26, ctl));
+  legends.push(makeLegend(document.getElementById("legend20"), lines, ctl));
+
+  makeTable(document.getElementById("table26"), lines26, {cols: COLS26});
+  makeTable(document.getElementById("table20"), lines, {cols: COLS20});
+
+  renderBooks(d.live, lines);
+
+  document.getElementById("livenote").textContent =
+    "These curves ARE the live books shown above — same portfolios, same " +
+    "trades, to the cent. History before " + m.live_boundary + " is the " +
+    "frozen-rules reconstruction; from that date signals are generated " +
+    "live every trading day. Data through " + m.end + ".";
+});
+</script>
+</body>
+</html>

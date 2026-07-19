@@ -1,0 +1,293 @@
+{
+ "as_of": "2026-07-17",
+ "start": "2020-01-02",
+ "start_capital": 10000.0,
+ "note": "positions and trades of the latest trading day per strategy; full journal in signals_journal.json; the commit history of this repository is the timestamp",
+ "strategies": {
+  "6f": {
+   "index": "NASDAQ 100",
+   "live_since": "2026-07-16",
+   "as_of": "2026-07-17",
+   "value": 43909.01,
+   "total_return": 3.391723,
+   "positions": [
+    {
+     "entry_date": "2026-06-29",
+     "pnl_pct": 0.078743,
+     "shares": 19.369,
+     "ticker": "PANW",
+     "value": 6947.27,
+     "weight": 0.1582
+    },
+    {
+     "entry_date": "2026-07-02",
+     "pnl_pct": 0.028969,
+     "shares": 16.4799,
+     "ticker": "PANW",
+     "value": 5911.0,
+     "weight": 0.1346
+    },
+    {
+     "entry_date": "2026-07-08",
+     "pnl_pct": 0.029723,
+     "shares": 34.9639,
+     "ticker": "FTNT",
+     "value": 5650.52,
+     "weight": 0.1287
+    },
+    {
+     "entry_date": "2026-07-13",
+     "pnl_pct": 0.004657,
+     "shares": 34.678,
+     "ticker": "FTNT",
+     "value": 5604.31,
+     "weight": 0.1276
+    },
+    {
+     "entry_date": "2026-07-16",
+     "pnl_pct": -0.00483,
+     "shares": 27.0748,
+     "ticker": "CRWD",
+     "value": 5498.36,
+     "weight": 0.1252
+    },
+    {
+     "entry_date": "2026-06-24",
+     "pnl_pct": -0.16534,
+     "shares": 15.7223,
+     "ticker": "LRCX",
+     "value": 4925.79,
+     "weight": 0.1122
+    },
+    {
+     "entry_date": "2026-06-15",
+     "pnl_pct": -0.171549,
+     "shares": 23.1397,
+     "ticker": "KLAC",
+     "value": 4922.96,
+     "weight": 0.1121
+    },
+    {
+     "entry_date": "2026-06-18",
+     "pnl_pct": -0.142994,
+     "shares": 6.938,
+     "ticker": "AMAT",
+     "value": 3674.77,
+     "weight": 0.0837
+    }
+   ],
+   "cash": 774.03,
+   "trades_today": []
+  },
+  "momAB": {
+   "index": "NASDAQ 100",
+   "live_since": "2026-07-16",
+   "as_of": "2026-07-17",
+   "value": 76737.96,
+   "total_return": 6.675233,
+   "positions": [
+    {
+     "entry_date": "2026-06-18",
+     "pnl_pct": -0.264606,
+     "shares": 12.9997,
+     "ticker": "STX",
+     "value": 10239.37,
+     "weight": 0.1334
+    },
+    {
+     "entry_date": "2026-07-16",
+     "pnl_pct": 0.054984,
+     "shares": 12.8018,
+     "ticker": "STX",
+     "value": 10083.46,
+     "weight": 0.1314
+    },
+    {
+     "entry_date": "2026-07-13",
+     "pnl_pct": -0.095327,
+     "shares": 11.6617,
+     "ticker": "MU",
+     "value": 9900.22,
+     "weight": 0.129
+    },
+    {
+     "entry_date": "2026-06-29",
+     "pnl_pct": -0.259737,
+     "shares": 11.3454,
+     "ticker": "MU",
+     "value": 9631.67,
+     "weight": 0.1255
+    },
+    {
+     "entry_date": "2026-06-15",
+     "pnl_pct": -0.270875,
+     "shares": 19.9465,
+     "ticker": "WDC",
+     "value": 9518.87,
+     "weight": 0.124
+    },
+    {
+     "entry_date": "2026-06-24",
+     "pnl_pct": -0.279167,
+     "shares": 96.287,
+     "ticker": "INTC",
+     "value": 9151.12,
+     "weight": 0.1193
+    },
+    {
+     "entry_date": "2026-07-02",
+     "pnl_pct": -0.224762,
+     "shares": 6.4528,
+     "ticker": "SNDK",
+     "value": 8742.41,
+     "weight": 0.1139
+    },
+    {
+     "entry_date": "2026-07-08",
+     "pnl_pct": -0.216763,
+     "shares": 6.3846,
+     "ticker": "SNDK",
+     "value": 8649.92,
+     "weight": 0.1127
+    }
+   ],
+   "cash": 820.92,
+   "trades_today": []
+  },
+  "MAG7": {
+   "index": "NASDAQ 100",
+   "live_since": "2026-07-16",
+   "as_of": "2026-07-17",
+   "value": 47619.8,
+   "total_return": 3.76198,
+   "positions": [
+    {
+     "entry_date": "2026-07-01",
+     "pnl_pct": 0.133705,
+     "ticker": "AAPL",
+     "value": 7638.85,
+     "weight": 0.1604
+    },
+    {
+     "entry_date": "2026-07-01",
+     "pnl_pct": 0.02647,
+     "ticker": "NVDA",
+     "value": 6916.31,
+     "weight": 0.1452
+    },
+    {
+     "entry_date": "2026-07-01",
+     "pnl_pct": 0.024826,
+     "ticker": "MSFT",
+     "value": 6905.23,
+     "weight": 0.145
+    },
+    {
+     "entry_date": "2026-07-01",
+     "pnl_pct": 0.02288,
+     "ticker": "AMZN",
+     "value": 6892.11,
+     "weight": 0.1447
+    },
+    {
+     "entry_date": "2026-07-01",
+     "pnl_pct": 0.004034,
+     "ticker": "AVGO",
+     "value": 6765.13,
+     "weight": 0.1421
+    },
+    {
+     "entry_date": "2026-07-01",
+     "pnl_pct": -0.039977,
+     "ticker": "GOOGL",
+     "value": 6468.59,
+     "weight": 0.1358
+    },
+    {
+     "entry_date": "2026-07-01",
+     "pnl_pct": -0.104538,
+     "ticker": "TSLA",
+     "value": 6033.58,
+     "weight": 0.1267
+    }
+   ],
+   "cash": 0.0,
+   "trades_today": []
+  },
+  "7fh": {
+   "index": "S&P 500",
+   "live_since": "2026-07-19",
+   "as_of": "2026-07-17",
+   "value": 60453.45,
+   "total_return": 5.046477,
+   "positions": [
+    {
+     "entry_date": "2026-06-15",
+     "pnl_pct": -0.195076,
+     "shares": 26.0568,
+     "ticker": "LRCX",
+     "value": 8163.58,
+     "weight": 0.135
+    },
+    {
+     "entry_date": "2026-06-24",
+     "pnl_pct": -0.16534,
+     "shares": 25.6547,
+     "ticker": "LRCX",
+     "value": 8037.63,
+     "weight": 0.133
+    },
+    {
+     "entry_date": "2026-07-13",
+     "pnl_pct": -0.086189,
+     "shares": 9.6019,
+     "ticker": "STX",
+     "value": 7563.07,
+     "weight": 0.1251
+    },
+    {
+     "entry_date": "2026-07-16",
+     "pnl_pct": -0.006472,
+     "shares": 8.8566,
+     "ticker": "MU",
+     "value": 7518.77,
+     "weight": 0.1244
+    },
+    {
+     "entry_date": "2026-07-02",
+     "pnl_pct": -0.122999,
+     "shares": 14.009,
+     "ticker": "AMAT",
+     "value": 7420.01,
+     "weight": 0.1227
+    },
+    {
+     "entry_date": "2026-06-18",
+     "pnl_pct": -0.288487,
+     "shares": 25.5167,
+     "ticker": "COHR",
+     "value": 7083.44,
+     "weight": 0.1172
+    },
+    {
+     "entry_date": "2026-06-29",
+     "pnl_pct": -0.291488,
+     "shares": 25.293,
+     "ticker": "COHR",
+     "value": 7021.33,
+     "weight": 0.1161
+    },
+    {
+     "entry_date": "2026-07-08",
+     "pnl_pct": -0.085509,
+     "shares": 8.4706,
+     "ticker": "STX",
+     "value": 6671.92,
+     "weight": 0.1104
+    }
+   ],
+   "cash": 973.7,
+   "trades_today": []
+  }
+ }
+}

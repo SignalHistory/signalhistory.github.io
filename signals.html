@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Every trade of the live strategy books — dates, tickers, prices, costs; live rows timestamped.">
+<title>Quant Lines — signals history</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%E2%97%86%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="masthead">
+  <a class="brand" href="index.html">◆ QUANT&nbsp;LINES</a>
+  <nav><a href="index.html">Live</a><a href="signals.html">Signals</a><a href="backtest.html">Backtest</a><a href="index.html#verify">Verify&nbsp;✓</a></nav>
+</div>
+
+<h1>Signals history</h1>
+<p class="subtitle">Every trade of the live books — what was bought and sold, when, at what price.</p>
+<p class="note" id="boundnote"></p>
+
+<div id="journal"></div>
+
+<div class="disclaimer">
+  Public real-time test of systematic strategies, for information and research purposes
+  only. Rows marked <em>live</em> were generated in real time; earlier rows are the
+  frozen-rules reconstruction. Prices are dividend/split-adjusted daily closes;
+  “Cost” = commission + slippage allowance (15&nbsp;bps of the notional). Nothing here
+  is investment advice, or an offer or solicitation to buy or sell any security. Past
+  performance does not guarantee future results. Prices come from public data sources
+  and may contain errors.
+</div>
+
+<script src="app.js"></script>
+<script>
+const INDEX_OF = {"6f": "NASDAQ 100", "7fh": "S&P 500",
+                  "momAB": "NASDAQ 100", "MAG7": "NASDAQ 100"};
+
+fetch("data/signals_journal.json").then(r => r.json()).then(d => {
+  document.getElementById("boundnote").textContent =
+    "Each book started with $" + d.start_capital.toLocaleString("en-US") +
+    " on " + d.start + ". Signals are live since " + d.live_since +
+    "; earlier rows are the frozen-rules reconstruction.";
+  const root = document.getElementById("journal");
+  let h = "";
+  for (const [name, strat] of Object.entries(d.strategies)) {
+    const since = strat.live_since || d.live_since;
+    h += `<h2><span class="dot" style="background:${COLORS[name]}"></span> ` +
+         `${name}<span class="ix" style="margin-left:8px">${INDEX_OF[name] || ""}</span>` +
+         `<span class="ix" style="margin-left:8px">live since ${since}</span></h2>`;
+    const ys = Object.keys(strat.years).sort().reverse();
+    ys.forEach((y, i) => {
+      const rows = strat.years[y];
+      h += `<details${i === 0 ? " open" : ""}><summary>${y} — ${rows.length} trades</summary>`;
+      h += '<table class="sig"><thead><tr><th>Date</th><th>Side</th><th>Ticker</th>' +
+           "<th>Shares</th><th>Price</th><th>Cost</th></tr></thead><tbody>";
+      rows.forEach(t => {
+        const live = t.date >= since;
+        h += `<tr><td>${t.date}${live ? ' <span class="pill">live</span>' : ""}</td>` +
+             `<td class="${t.side === "BUY" ? "up" : "dn"}">${t.side}</td>` +
+             `<td class="l">${t.ticker}</td><td>${t.shares.toFixed(2)}</td>` +
+             `<td>$${t.price.toFixed(2)}</td><td>$${t.cost.toFixed(2)}</td></tr>`;
+      });
+      h += "</tbody></table></details>";
+    });
+  }
+  root.innerHTML = h;
+});
+</script>
+</body>
+</html>
