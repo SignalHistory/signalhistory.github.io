@@ -8,15 +8,15 @@
    "index": "NASDAQ 100",
    "live_since": "2026-07-16",
    "as_of": "2026-07-17",
-   "value": 43909.01,
-   "total_return": 3.391723,
+   "value": 43909.0,
+   "total_return": 3.391722,
    "positions": [
     {
      "entry_date": "2026-06-29",
      "pnl_pct": 0.078743,
      "shares": 19.369,
      "ticker": "PANW",
-     "value": 6947.27,
+     "value": 6947.26,
      "weight": 0.1582
     },
     {
@@ -48,7 +48,7 @@
      "pnl_pct": -0.00483,
      "shares": 27.0748,
      "ticker": "CRWD",
-     "value": 5498.36,
+     "value": 5498.35,
      "weight": 0.1252
     },
     {
@@ -76,15 +76,15 @@
      "weight": 0.0837
     }
    ],
-   "cash": 774.03,
+   "cash": 774.04,
    "trades_today": []
   },
   "momAB": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-16",
    "as_of": "2026-07-17",
-   "value": 76737.96,
-   "total_return": 6.675233,
+   "value": 76737.97,
+   "total_return": 6.675234,
    "positions": [
     {
      "entry_date": "2026-06-18",
@@ -151,7 +151,82 @@
      "weight": 0.1127
     }
    ],
-   "cash": 820.92,
+   "cash": 820.93,
+   "trades_today": []
+  },
+  "momAB_k8u": {
+   "index": "NASDAQ 100",
+   "live_since": "2026-07-20",
+   "as_of": "2026-07-17",
+   "value": 186180.09,
+   "total_return": 17.618009,
+   "positions": [
+    {
+     "entry_date": "2026-06-18",
+     "pnl_pct": -0.252366,
+     "shares": 37.3535,
+     "ticker": "MU",
+     "value": 16699.48,
+     "weight": 0.0897
+    },
+    {
+     "entry_date": "2026-06-29",
+     "pnl_pct": -0.259737,
+     "shares": 36.9339,
+     "ticker": "MU",
+     "value": 16511.92,
+     "weight": 0.0887
+    },
+    {
+     "entry_date": "2026-07-16",
+     "pnl_pct": -0.041308,
+     "shares": 21.7902,
+     "ticker": "SNDK",
+     "value": 15546.47,
+     "weight": 0.0835
+    },
+    {
+     "entry_date": "2026-06-24",
+     "pnl_pct": -0.25989,
+     "shares": 60.8479,
+     "ticker": "WDC",
+     "value": 15291.64,
+     "weight": 0.0821
+    },
+    {
+     "entry_date": "2026-07-13",
+     "pnl_pct": -0.191867,
+     "shares": 20.8731,
+     "ticker": "SNDK",
+     "value": 14892.18,
+     "weight": 0.08
+    },
+    {
+     "entry_date": "2026-07-02",
+     "pnl_pct": -0.224762,
+     "shares": 20.7044,
+     "ticker": "SNDK",
+     "value": 14771.8,
+     "weight": 0.0793
+    },
+    {
+     "entry_date": "2026-07-08",
+     "pnl_pct": -0.216763,
+     "shares": 20.5251,
+     "ticker": "SNDK",
+     "value": 14643.87,
+     "weight": 0.0787
+    },
+    {
+     "entry_date": "2026-06-15",
+     "pnl_pct": -0.220757,
+     "shares": 30.1746,
+     "ticker": "MU",
+     "value": 13490.03,
+     "weight": 0.0725
+    }
+   ],
+   "cash": 64332.7,
    "trades_today": []
   },
   "MAG7": {

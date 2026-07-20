@@ -4,6 +4,7 @@
 // MAG7 reference are drawn in muted grey (data flag `gray`).
 const COLORS = {
   "6f": "#1f4e79", "7fh": "#b3242b", "momAB": "#6a3d9a",
+  "momAB_k8u": "#1f7a3d",
   // muted-but-tinted reference lines: bronze / slate-blue / sage-green
   "MAG7": "#a08c6a", "QQQ": "#7b87a8", "S&P 500": "#7d9b7a",
 };

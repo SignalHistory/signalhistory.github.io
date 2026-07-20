@@ -57,6 +57,12 @@ return · <b>Sharpe</b> risk-adjusted return · <b>Max DD</b> deepest
 peak-to-trough loss · <b>Martin</b> return / ulcer (drawdown-adjusted) ·
 <b>Ulcer</b> drawdown depth index · <b>Dom top-1 / top-2</b> share of days
 the line ranked #1 / top-2 by cumulative growth among the lines shown.
+<br><b>momAB_k8u</b> (public since 2026-07-20) is a throttled variant of an
+aggressive momentum book: when the book's own recent volatility rises, its
+market exposure is scaled down and the remainder sits in cash — so its
+holdings mirror a more concentrated sibling of momAB at a varying fraction,
+and it trades only through that daily exposure adjustment. History before
+2026-07-20 is a frozen-rules reconstruction.
 <br><b>MAG7</b> is a synthetic Magnificent-Seven proxy: the 7 largest
 companies of the universe, equal weight, rebalanced at quarterly snapshots,
 no costs.</p>
@@ -87,7 +93,7 @@ const COLS20 = [
   ["Ulcer", "Ulcer", v => v == null ? "" : v.toFixed(2)],
   ["dom_top1", "Dom top-1", fmtDom], ["dom_top2", "Dom top-2", fmtDom],
 ];
-const BOOKS = ["6f", "momAB", "7fh", "MAG7"];
+const BOOKS = ["6f", "momAB", "momAB_k8u", "7fh", "MAG7"];
 
 function bookDot(name) {
   return `<span class="dot" style="background:${COLORS[name]}"></span>`;
@@ -142,6 +148,11 @@ function renderBooks(live, lines) {
              `<td>$${t.price.toFixed(2)}</td><td>$${t.cost.toFixed(2)}</td></tr>`;
       });
       h += "</tbody></table>";
+    } else if (name === "momAB_k8u") {
+      h += '<p class="note">This book holds a scaled copy of an aggressive ' +
+           'momentum portfolio: the only daily action is adjusting the ' +
+           'invested fraction (see the cash row) as its volatility ' +
+           'throttle moves.</p>';
     } else {
       h += '<p class="note">This book rebalances quarterly — no daily trades.</p>';
     }
