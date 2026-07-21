@@ -63,6 +63,11 @@ market exposure is scaled down and the remainder sits in cash — so its
 holdings mirror a more concentrated sibling of momAB at a varying fraction,
 and it trades only through that daily exposure adjustment. History before
 2026-07-20 is a frozen-rules reconstruction.
+<br><b>resAB</b> and <b>resAB_sp</b> (public since 2026-07-20) run one and
+the same residual-momentum recipe on two universes (NASDAQ 100 and S&P 500):
+stocks are ranked by their returns AFTER stripping the market component, so
+the books back stock-specific strength rather than index beta. History
+before 2026-07-20 is a frozen-rules reconstruction.
 <br><b>MAG7</b> is a synthetic Magnificent-Seven proxy: the 7 largest
 companies of the universe, equal weight, rebalanced at quarterly snapshots,
 no costs.</p>
@@ -93,7 +98,7 @@ const COLS20 = [
   ["Ulcer", "Ulcer", v => v == null ? "" : v.toFixed(2)],
   ["dom_top1", "Dom top-1", fmtDom], ["dom_top2", "Dom top-2", fmtDom],
 ];
-const BOOKS = ["6f", "momAB", "momAB_k8u", "7fh", "MAG7"];
+const BOOKS = ["6f", "momAB", "momAB_k8u", "resAB", "7fh", "resAB_sp", "MAG7"];
 
 function bookDot(name) {
   return `<span class="dot" style="background:${COLORS[name]}"></span>`;
