@@ -78,6 +78,29 @@ h3 .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-rig
 .uplot{font-family:Georgia,serif}
 .u-legend{font-size:13px}
 code{font-family:"SF Mono",Consolas,monospace;font-size:14px;background:#e9e2cf;padding:1px 5px;border-radius:4px}
+/* compact presentation for dense research blocks (Start-year explorer):
+   small sans tables with tabular numerals, tight paddings — reads like a
+   terminal report instead of an airy article */
+.compact{font-size:14px}
+.compact h3{font-size:16.5px;margin:18px 0 2px}
+.compact .note,.compact .footnotes{font-size:12.5px;line-height:1.45}
+.compact p{margin:5px 0}
+.compact .period-tabs{gap:4px;margin:8px 0 4px}
+.compact .period-tabs button{font-size:12.5px;padding:3px 10px;border-radius:5px}
+.compact .controls{gap:5px;font-size:13px;margin:4px 0 2px}
+.compact .controls button{font-size:12px;padding:3px 10px;border-radius:5px}
+.compact table{font-size:12.5px;margin:6px 0;line-height:1.35;
+  font-family:"Segoe UI",-apple-system,"Helvetica Neue",Arial,sans-serif;
+  font-variant-numeric:tabular-nums}
+.compact th,.compact td{padding:3px 6px}
+.compact thead th{font-size:11.5px}
+.compact td .dot{width:8px;height:8px;margin-right:5px}
+.compact td.ix,.compact th.ixh{font-size:11px}
+.compact .pill{font-size:10.5px;padding:0 7px;margin-left:4px}
+.compact .legend{font-size:12.5px;gap:4px 12px;margin:6px 2px;
+  font-family:"Segoe UI",-apple-system,Arial,sans-serif}
+.compact .chartwrap{padding:8px 6px 2px;margin:8px 0}
+
 /* verification block */
 .vbox{background:var(--panel);border:1px solid var(--rule-light);border-radius:10px;
   padding:16px 20px;margin:14px 0}

@@ -38,6 +38,7 @@ rules; these research tracks extend them decades back on survivorship-free unive
 </p>
 
 <h2 id="explorer">Start-year explorer</h2>
+<div class="compact">
 <p class="note">Pick any start year — the metrics table and the chart rebase to it
 ("growth of 1 invested on Jan&nbsp;1 of that year"). Adds the wider metric set and
 the <b>P4</b> research portfolio: equal-weight 25%&nbsp;×&nbsp;4 of momAB_k8u, resAB, 7fh
@@ -74,6 +75,7 @@ worst window — "how often a year is profitable, and how bad the bad ones get".
 index benchmarks are profitable <i>more often</i>; the strategies win by magnitude, not
 frequency.</p>
 <div id="xroll" style="overflow-x:auto"></div>
+</div>
 
 <div class="disclaimer">
   Historical backtests, for information and research purposes only — all results on this
@@ -164,7 +166,7 @@ fetch("data/history.json").then(r => r.json()).then(d => {
     const clines = rows.map(r => ({...r, curve: CURVES[r.code]}))
                        .filter(l => l.curve);
     const el = document.getElementById("xchart"); el.innerHTML = "";
-    xchart = makeChart(el, clines, {height: 380});
+    xchart = makeChart(el, clines, {height: 320});
     xchart.setRange(Date.parse(pd.start + "T00:00:00Z") / 1e3, tmaxX);
     makeLegend(document.getElementById("xlegend"), clines, xchart);
   }
