@@ -37,17 +37,57 @@ rules; these research tracks extend them decades back on survivorship-free unive
   Total × is concentration-lottery noisy over long spans — read risk axes and domination first.
 </p>
 
+<h2 id="explorer">Start-year explorer</h2>
+<p class="note">Pick any start year — the metrics table and the chart rebase to it
+("growth of 1 invested on Jan&nbsp;1 of that year"). Adds the wider metric set and
+the <b>P4</b> research portfolio: equal-weight 25%&nbsp;×&nbsp;4 of momAB_k8u, resAB, 7fh
+and resAB_sp, monthly rebalance, same 15&nbsp;bps costs — a research track
+(in live incubation since 2026-07-22, not on the Live page).</p>
+
+<div class="period-tabs" id="xtabs1"></div>
+<p class="note" id="xverdict"></p>
+<div id="xtable" style="overflow-x:auto"></div>
+<p class="footnotes">
+  Extra columns: <b>Vol</b> annualised volatility · <b>Sortino</b> downside Sharpe ·
+  <b>Calmar</b> CAGR / |MaxDD| · <b>R²</b> of log-equity (path smoothness, 1 = straight line) ·
+  <b>K</b> Kestner ratio. Click any header to sort. In the 1999 view 6f starts in 2001
+  (walk-forward warm-up) and the S&amp;P-side lines are absent (no survivorship-free data).
+</p>
+
+<div class="period-tabs" id="xtabs2"></div>
+<div class="chartwrap"><div id="xchart"></div></div>
+<div class="legend" id="xlegend"></div>
+
+<h3>Rank across start years</h3>
+<p class="note">Rank 1..7 among the strategies (grey reference lines excluded) for every
+start year above. Dom1 structurally punishes the P4 blend — an equal-weight portfolio is
+never the single leader by construction; read it for solo lines.</p>
+<div class="controls" id="xrsel"></div>
+<div id="xrank" style="overflow-x:auto"></div>
+
+<h3>Calendar-year returns, %</h3>
+<div id="xyearly" style="overflow-x:auto"></div>
+
+<h3>Rolling 1-year windows since 2005</h3>
+<p class="note">Share of profitable rolling 252-day windows, the 5th percentile and the
+worst window — "how often a year is profitable, and how bad the bad ones get". The
+index benchmarks are profitable <i>more often</i>; the strategies win by magnitude, not
+frequency.</p>
+<div id="xroll" style="overflow-x:auto"></div>
+
 <div class="disclaimer">
   Historical backtests, for information and research purposes only — all results on this
   page are simulated. Nothing here is investment advice, or an offer or solicitation to
   buy or sell any security. Survivorship-free universes, point-in-time membership,
-  15&nbsp;bps trading costs per side; no taxes or broker fees. Past performance does not
-  guarantee future results. Prices come from public data sources and may contain errors.
-  Strategy internals are intentionally not shown.
+  15&nbsp;bps trading costs per side; no taxes or broker fees. P4 is a derived research
+  portfolio of the four lines above, not a separately tracked live book. Past performance
+  does not guarantee future results. Prices come from public data sources and may contain
+  errors. Strategy internals are intentionally not shown.
 </div>
 
 <script src="app.js"></script>
 <script>
+COLORS["P4"] = "#14140f";
 fetch("data/history.json").then(r => r.json()).then(d => {
   const periods = Object.keys(d.periods);
   const tabsEl = document.getElementById("tabs");
@@ -72,6 +112,150 @@ fetch("data/history.json").then(r => r.json()).then(d => {
     tabsEl.appendChild(b);
   });
   show(periods[0]);                    // default: the longest, 1999-2026
+
+  // ================= Start-year explorer =================================
+  const X = d.explorer;
+  if (!X) return;
+  const XYEARS = Object.keys(X.periods);
+  const XCOLS = [
+    ["total_x", "Total ×", fmtX], ["CAGR", "CAGR", fmtPct],
+    ["vol", "Vol", fmtPct], ["Sharpe", "Sharpe", fmtNum],
+    ["Sortino", "Sortino", fmtNum], ["MaxDD", "Max DD", fmtPct],
+    ["Calmar", "Calmar", fmtNum],
+    ["Ulcer", "Ulcer", v => v == null ? "" : v.toFixed(2)],
+    ["Martin", "Martin", fmtNum],
+    ["R2", "R²", v => v == null ? "" : v.toFixed(3)],
+    ["K", "K", fmtNum],
+    ["dom_top1", "Dom1", fmtDom], ["dom_top2", "Dom2", fmtDom],
+  ];
+  // full-length weekly curves: reuse the classic periods' payload
+  const pick = (arr, c) => arr.find(l => l.code === c);
+  const src99 = d.periods["1999-2026"].lines, src05 = d.periods["2005-2026"].lines;
+  const CURVES = {};
+  ["6f", "momAB", "momAB_k8u", "resAB", "MAG7", "QQQ"].forEach(c => {
+    const l = pick(src99, c); if (l) CURVES[c] = l.curve;
+  });
+  ["7fh", "resAB_sp", "S&P 500"].forEach(c => {
+    const l = pick(src05, c); if (l) CURVES[c] = l.curve;
+  });
+  CURVES["P4"] = X.p4_curve;
+  let tmaxX = 0;
+  Object.values(CURVES).forEach(cv => {
+    const t = cv[cv.length - 1][0]; if (t > tmaxX) tmaxX = t;
+  });
+
+  let xchart = null, xyear = null;
+  function showX(y) {
+    xyear = y;
+    document.querySelectorAll("#xtabs1 button,#xtabs2 button").forEach(b =>
+      b.classList.toggle("on", b.dataset.p === y));
+    const pd = X.periods[y], rows = pd.lines;
+    makeTable(document.getElementById("xtable"), rows,
+              {cols: XCOLS, showStart: true});
+    const strat = rows.filter(l => !l.gray);
+    const top = k => strat.slice().sort((a, b) => (b[k] || 0) - (a[k] || 0))[0];
+    const g = top("total_x"), m = top("Martin"), dm = top("dom_top1");
+    document.getElementById("xverdict").innerHTML =
+      "Start " + y + " → " + "2026-07" + ": growth leader <b>" + g.code +
+      "</b> " + fmtX(g.total_x) + " · smoothest path <b>" + m.code +
+      "</b> (Martin " + fmtNum(m.Martin) + ") · most days on top <b>" +
+      dm.code + "</b> (" + fmtDom(dm.dom_top1) + ")";
+    // chart: subset with data in this period, full curves, ranged rebase
+    const clines = rows.map(r => ({...r, curve: CURVES[r.code]}))
+                       .filter(l => l.curve);
+    const el = document.getElementById("xchart"); el.innerHTML = "";
+    xchart = makeChart(el, clines, {height: 380});
+    xchart.setRange(Date.parse(pd.start + "T00:00:00Z") / 1e3, tmaxX);
+    makeLegend(document.getElementById("xlegend"), clines, xchart);
+  }
+  ["xtabs1", "xtabs2"].forEach(id => {
+    const el = document.getElementById(id);
+    XYEARS.forEach(y => {
+      const b = document.createElement("button");
+      b.textContent = y; b.dataset.p = y;
+      b.onclick = () => showX(y);
+      el.appendChild(b);
+    });
+  });
+
+  // ---- rank matrix -------------------------------------------------------
+  const RMETRICS = Object.keys(X.rank);
+  let rmetric = RMETRICS[0];
+  const chip = r => {
+    if (r == null) return '<span style="color:var(--muted)">—</span>';
+    let bg = "#efece0", fg = "var(--ink)";
+    if (r === 1) { bg = "#cfe3c2"; fg = "#14401f"; }
+    else if (r <= 3) { bg = "#e7efdd"; fg = "#2c5222"; }
+    else if (r >= 6) { bg = "#f3ded6"; fg = "#7a1f1f"; }
+    return '<span style="display:inline-block;min-width:24px;text-align:center;' +
+      'border-radius:5px;padding:1px 3px;background:' + bg + ';color:' + fg +
+      '">' + r + "</span>";
+  };
+  function renderRank() {
+    document.querySelectorAll("#xrsel button").forEach(b =>
+      b.classList.toggle("on", b.dataset.m === rmetric));
+    const rk = X.rank[rmetric];
+    const codes = Object.keys(rk);
+    const rows = codes.map(c => {
+      const vals = XYEARS.map(y => rk[c][y]).filter(v => v != null);
+      return {c, avg: vals.reduce((a, b) => a + b, 0) / vals.length};
+    }).sort((a, b) => a.avg - b.avg);
+    let h = "<table><thead><tr><th>Strategy</th>" +
+      XYEARS.map(y => "<th>’" + y.slice(2) + "</th>").join("") +
+      "<th>avg</th></tr></thead><tbody>";
+    rows.forEach(r => {
+      h += '<tr><td class="code"><span class="dot" style="background:' +
+        (COLORS[r.c] || "#333") + '"></span>' + r.c + "</td>" +
+        XYEARS.map(y => "<td>" + chip(rk[r.c][y]) + "</td>").join("") +
+        "<td>" + r.avg.toFixed(1) + "</td></tr>";
+    });
+    document.getElementById("xrank").innerHTML = h + "</tbody></table>";
+  }
+  RMETRICS.forEach(m => {
+    const b = document.createElement("button");
+    b.textContent = m; b.dataset.m = m;
+    b.onclick = () => { rmetric = m; renderRank(); };
+    document.getElementById("xrsel").appendChild(b);
+  });
+
+  // ---- calendar-year returns ---------------------------------------------
+  const YCODES = Object.keys(X.yearly);
+  const years = [...new Set(YCODES.flatMap(c => Object.keys(X.yearly[c])))].sort();
+  const ychip = v => {
+    if (v == null) return "";
+    let bg = "#e7efdd", fg = "#2c5222";
+    if (v >= 50) { bg = "#cfe3c2"; fg = "#14401f"; }
+    else if (v < -30) { bg = "#e8c4b8"; fg = "#5c1414"; }
+    else if (v < 0) { bg = "#f3ded6"; fg = "#7a1f1f"; }
+    return '<span style="display:inline-block;min-width:47px;text-align:right;' +
+      'border-radius:5px;padding:1px 5px;background:' + bg + ';color:' + fg +
+      '">' + v.toFixed(1) + "</span>";
+  };
+  let yh = "<table><thead><tr><th>Year</th>" +
+    YCODES.map(c => "<th>" + c + "</th>").join("") + "</tr></thead><tbody>";
+  years.forEach(y => {
+    yh += "<tr><td>" + y + (y === "2026" ? " YTD" : "") + "</td>" +
+      YCODES.map(c => "<td>" + ychip(X.yearly[c][y]) + "</td>").join("") +
+      "</tr>";
+  });
+  document.getElementById("xyearly").innerHTML = yh + "</tbody></table>";
+
+  // ---- rolling 1y stats ---------------------------------------------------
+  let rh = "<table class=\"sig\"><thead><tr><th>Line</th>" +
+    "<th>% profitable windows</th><th>5th percentile</th><th>worst window</th>" +
+    "</tr></thead><tbody>";
+  YCODES.forEach(c => {
+    const r = X.rolling[c];
+    if (!r) return;
+    rh += '<tr><td class="code"><span class="dot" style="background:' +
+      (COLORS[c] || "#333") + '"></span>' + c + "</td><td>" + r[0].toFixed(1) +
+      "%</td><td>" + r[1].toFixed(1) + "%</td><td>" + r[2].toFixed(1) +
+      "%</td></tr>";
+  });
+  document.getElementById("xroll").innerHTML = rh + "</tbody></table>";
+
+  showX("2005");
+  renderRank();
 });
 </script>
 </body>
