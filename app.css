@@ -82,7 +82,11 @@ code{font-family:"SF Mono",Consolas,monospace;font-size:14px;background:#e9e2cf;
    small sans tables with tabular numerals, tight paddings — reads like a
    terminal report instead of an airy article */
 .compact{font-size:14px}
+.compact h1{font-size:26px;margin:8px 0 2px}
+.compact h2{font-size:19px;margin:22px 0 6px}
 .compact h3{font-size:16.5px;margin:18px 0 2px}
+.compact .subtitle{font-size:13.5px;margin:2px 0 10px}
+.compact .disclaimer{font-size:12px;margin-top:24px}
 .compact .note,.compact .footnotes{font-size:12.5px;line-height:1.45}
 .compact p{margin:5px 0}
 .compact .period-tabs{gap:4px;margin:8px 0 4px}

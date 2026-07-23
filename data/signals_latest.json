@@ -8,7 +8,7 @@
    "index": "NASDAQ 100",
    "live_since": "2026-07-16",
    "as_of": "2026-07-22",
-   "value": 42511.48,
+   "value": 42511.47,
    "total_return": 3.251944,
    "positions": [
     {
@@ -76,7 +76,7 @@
      "weight": 0.0904
     }
    ],
-   "cash": 396.8,
+   "cash": 396.79,
    "trades_today": []
   },
   "momAB": {
@@ -158,21 +158,21 @@
    "index": "NASDAQ 100",
    "live_since": "2026-07-20",
    "as_of": "2026-07-22",
-   "value": 205516.26,
-   "total_return": 19.551626,
+   "value": 205516.23,
+   "total_return": 19.551623,
    "positions": [
     {
      "entry_date": "2026-06-18",
      "pnl_pct": -0.155028,
      "shares": 37.3535,
      "ticker": "MU",
-     "value": 17478.88,
+     "value": 17478.87,
      "weight": 0.085
     },
     {
      "entry_date": "2026-06-29",
      "pnl_pct": -0.163357,
-     "shares": 36.934,
+     "shares": 36.9339,
      "ticker": "MU",
      "value": 17282.56,
      "weight": 0.0841
@@ -182,7 +182,7 @@
      "pnl_pct": 0.004703,
      "shares": 21.8678,
      "ticker": "SNDK",
-     "value": 17055.87,
+     "value": 17055.86,
      "weight": 0.083
     },
     {
@@ -198,7 +198,7 @@
      "pnl_pct": -0.136672,
      "shares": 60.8479,
      "ticker": "WDC",
-     "value": 16519.24,
+     "value": 16519.23,
      "weight": 0.0804
     },
     {
@@ -214,7 +214,7 @@
      "pnl_pct": -0.084886,
      "shares": 20.7044,
      "ticker": "SNDK",
-     "value": 16148.44,
+     "value": 16148.43,
      "weight": 0.0786
     },
     {
@@ -226,15 +226,15 @@
      "weight": 0.0779
     }
    ],
-   "cash": 71747.36,
+   "cash": 71747.37,
    "trades_today": []
   },
   "resAB": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-20",
    "as_of": "2026-07-22",
-   "value": 136943.08,
-   "total_return": 12.696872,
+   "value": 136943.04,
+   "total_return": 12.696869,
    "positions": [
     {
      "entry_date": "2026-06-24",
@@ -249,7 +249,7 @@
      "pnl_pct": 0.190712,
      "shares": 31.6081,
      "ticker": "WDC",
-     "value": 17595.28,
+     "value": 17595.27,
      "weight": 0.1285
     },
     {
@@ -257,7 +257,7 @@
      "pnl_pct": 0.013578,
      "shares": 30.9008,
      "ticker": "WDC",
-     "value": 17201.57,
+     "value": 17201.56,
      "weight": 0.1256
     },
     {
@@ -301,7 +301,7 @@
      "weight": 0.1141
     }
    ],
-   "cash": 1298.35,
+   "cash": 1298.33,
    "trades_today": []
   },
   "MAG7": {

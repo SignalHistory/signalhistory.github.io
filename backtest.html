@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%E2%97%86%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="app.css">
 </head>
-<body>
+<body class="compact">
 <div class="masthead">
   <a class="brand" href="index.html">◆ QUANT&nbsp;LINES</a>
   <nav><a href="index.html">Live</a><a href="signals.html">Signals</a><a href="backtest.html">Backtest</a><a href="index.html#verify">Verify&nbsp;✓</a></nav>
@@ -38,7 +38,6 @@ rules; these research tracks extend them decades back on survivorship-free unive
 </p>
 
 <h2 id="explorer">Start-year explorer</h2>
-<div class="compact">
 <p class="note">Pick any start year — the metrics table and the chart rebase to it
 ("growth of 1 invested on Jan&nbsp;1 of that year"). Adds the wider metric set and
 the <b>P4</b> research portfolio: equal-weight 25%&nbsp;×&nbsp;4 of momAB_k8u, resAB, 7fh
@@ -75,7 +74,6 @@ worst window — "how often a year is profitable, and how bad the bad ones get".
 index benchmarks are profitable <i>more often</i>; the strategies win by magnitude, not
 frequency.</p>
 <div id="xroll" style="overflow-x:auto"></div>
-</div>
 
 <div class="disclaimer">
   Historical backtests, for information and research purposes only — all results on this
@@ -99,7 +97,7 @@ fetch("data/history.json").then(r => r.json()).then(d => {
       b.classList.toggle("on", b.dataset.p === p));
     const pd = d.periods[p], lines = pd.lines;
     const el = document.getElementById("chart"); el.innerHTML = "";
-    chart = makeChart(el, lines, {height: 400});
+    chart = makeChart(el, lines, {height: 340});
     makeLegend(document.getElementById("legend"), lines, chart);
     makeTable(document.getElementById("table"), lines, true);
     document.getElementById("pnote").textContent =
