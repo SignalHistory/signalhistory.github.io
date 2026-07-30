@@ -57,27 +57,15 @@ return · <b>Sharpe</b> risk-adjusted return · <b>Max DD</b> deepest
 peak-to-trough loss · <b>Martin</b> return / ulcer (drawdown-adjusted) ·
 <b>Ulcer</b> drawdown depth index · <b>Dom top-1 / top-2</b> share of days
 the line ranked #1 / top-2 by cumulative growth among the lines shown.
-<br><b>momAB_k8u</b> (public since 2026-07-20) is a throttled variant of an
-aggressive momentum book: when the book's own recent volatility rises, its
-market exposure is scaled down and the remainder sits in cash — so its
-holdings mirror a more concentrated sibling of momAB at a varying fraction,
-and it trades only through that daily exposure adjustment. History before
-2026-07-20 is a frozen-rules reconstruction.
-<br><b>resAB</b> and <b>resAB_sp</b> (public since 2026-07-20) run one and
-the same residual-momentum recipe on two universes (NASDAQ 100 and S&P 500):
-stocks are ranked by their returns AFTER stripping the market component, so
-the books back stock-specific strength rather than index beta. History
-before 2026-07-20 is a frozen-rules reconstruction.
-<br><b>MAG7</b> is a synthetic Magnificent-Seven proxy: the 7 largest
-companies of the universe, equal weight, rebalanced at quarterly snapshots,
-no costs.</p>
+</p>
 
 <div class="disclaimer">
   Public real-time test of systematic strategies, for information and research purposes
   only. Nothing here is investment advice, or an offer or solicitation to buy or sell any
   security. Results before the live marker are simulated under frozen rules; results after
-  it come from a live test with virtual capital. Performance figures include 15&nbsp;bps
-  trading costs per side but no taxes or fees of any broker. Past performance does not
+  it come from a live test with virtual capital. Performance figures for the strategies include 15&nbsp;bps
+  trading costs per side but no taxes or fees of any broker; reference lines
+  marked as benchmarks may be shown without costs. Past performance does not
   guarantee future results. Prices come from public data sources and may contain errors.
   Strategy internals are intentionally not shown.
 </div>
@@ -153,13 +141,10 @@ function renderBooks(live, lines) {
              `<td>$${t.price.toFixed(2)}</td><td>$${t.cost.toFixed(2)}</td></tr>`;
       });
       h += "</tbody></table>";
-    } else if (name === "momAB_k8u") {
-      h += '<p class="note">This book holds a scaled copy of an aggressive ' +
-           'momentum portfolio: the only daily action is adjusting the ' +
-           'invested fraction (see the cash row) as its volatility ' +
-           'throttle moves.</p>';
     } else {
-      h += '<p class="note">This book rebalances quarterly — no daily trades.</p>';
+      // no per-book explanations here: the public page carries the line name
+      // and its results only (see DEPLOY.md "Граница раскрытия")
+      h += '<p class="note">No trades in the current window.</p>';
     }
     h += `<p>Signals are generated live every trading day since ${s.live_since || live.live_since}. ` +
          `<a href="signals.html">Full signals history →</a></p>`;

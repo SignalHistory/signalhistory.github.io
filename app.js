@@ -5,6 +5,10 @@
 const COLORS = {
   "6f": "#1f4e79", "7fh": "#b3242b", "momAB": "#6a3d9a",
   "momAB_k8u": "#1f7a3d", "resAB": "#cc5500", "resAB_sp": "#2e7f7f",
+  // the remaining public lines — each needs its own hue, otherwise they all
+  // fall back to the same default grey
+  "MAG200": "#c9a227", "momAB_k8ug": "#00a0b0", "magAB_k8g": "#d81b60",
+  "magAB_k8g_cut2": "#4a148c", "magAB_k8g_cut4": "#827717",
   // muted-but-tinted reference lines: bronze / slate-blue / sage-green
   "MAG7": "#a08c6a", "QQQ": "#7b87a8", "S&P 500": "#7d9b7a",
 };
