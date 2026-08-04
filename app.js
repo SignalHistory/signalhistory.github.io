@@ -9,6 +9,8 @@ const COLORS = {
   // fall back to the same default grey
   "MAG200": "#c9a227", "momAB_k8ug": "#00a0b0", "magAB_k8g": "#d81b60",
   "magAB_k8g_cut2": "#4a148c", "magAB_k8g_cut4": "#827717",
+  "momAB-S1": "#0d9488", "momAB-S2": "#1d4ed8",
+  "momAB-S3": "#9d174d", "momAB-S4": "#be123c",
   // muted-but-tinted reference lines: bronze / slate-blue / sage-green
   "MAG7": "#a08c6a", "QQQ": "#7b87a8", "S&P 500": "#7d9b7a",
 };

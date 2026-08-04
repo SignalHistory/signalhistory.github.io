@@ -8,10 +8,10 @@
    "index": "NASDAQ 100",
    "live_since": "2026-07-16",
    "as_of": "2026-08-03",
-   "value": 43008.1,
+   "value": 43008.11,
    "total_return": 3.301617,
    "positions": [],
-   "cash": 43008.1,
+   "cash": 43008.11,
    "trades_today": [
     {
      "date": "2026-08-03",
@@ -83,10 +83,10 @@
    "index": "NASDAQ 100",
    "live_since": "2026-07-16",
    "as_of": "2026-08-03",
-   "value": 86130.5,
-   "total_return": 7.614665,
+   "value": 86130.47,
+   "total_return": 7.614663,
    "positions": [],
-   "cash": 86130.5,
+   "cash": 86130.47,
    "trades_today": [
     {
      "date": "2026-08-03",
@@ -158,20 +158,20 @@
    "index": "NASDAQ 100",
    "live_since": "2026-07-20",
    "as_of": "2026-08-03",
-   "value": 200667.34,
-   "total_return": 19.066734,
+   "value": 200667.35,
+   "total_return": 19.066735,
    "positions": [],
-   "cash": 200667.34,
+   "cash": 200667.35,
    "trades_today": []
   },
   "resAB": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-20",
    "as_of": "2026-08-03",
-   "value": 140173.4,
-   "total_return": 13.019969,
+   "value": 140173.43,
+   "total_return": 13.019971,
    "positions": [],
-   "cash": 140173.4,
+   "cash": 140173.43,
    "trades_today": [
     {
      "date": "2026-08-03",
@@ -303,8 +303,8 @@
    "index": "NASDAQ 100",
    "live_since": "2026-07-24",
    "as_of": "2026-08-03",
-   "value": 43030.81,
-   "total_return": 3.303081,
+   "value": 43030.82,
+   "total_return": 3.303082,
    "positions": [
     {
      "entry_date": "2026-07-01",
@@ -356,7 +356,7 @@
      "weight": 0.1021
     }
    ],
-   "cash": -4.32,
+   "cash": -4.31,
    "trades_today": []
   },
   "momAB_k8ug": {
@@ -373,50 +373,70 @@
    "index": "NASDAQ 100",
    "live_since": "2026-07-25",
    "as_of": "2026-08-03",
-   "value": 62844.26,
-   "total_return": 5.284426,
+   "value": 62844.27,
+   "total_return": 5.284427,
    "positions": [],
-   "cash": 62844.26,
+   "cash": 62844.27,
    "trades_today": []
   },
   "magAB_k8g_cut2": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-29",
    "as_of": "2026-08-03",
-   "value": 62844.26,
-   "total_return": 5.284426,
+   "value": 62844.27,
+   "total_return": 5.284427,
    "positions": [],
-   "cash": 62844.26,
+   "cash": 62844.27,
    "trades_today": []
   },
   "magAB_k8g_cut4": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-29",
    "as_of": "2026-08-03",
-   "value": 67266.99,
-   "total_return": 5.726699,
+   "value": 67267.06,
+   "total_return": 5.726706,
    "positions": [],
-   "cash": 67266.99,
+   "cash": 67267.06,
    "trades_today": []
   },
   "momAB-S1": {
    "index": "NASDAQ 100",
    "live_since": "2026-08-02",
    "as_of": "2026-08-03",
-   "value": 324465.78,
-   "total_return": 31.446578,
+   "value": 324465.75,
+   "total_return": 31.446575,
    "positions": [],
-   "cash": 324465.78,
+   "cash": 324465.75,
    "trades_today": []
   },
   "momAB-S2": {
    "index": "NASDAQ 100",
    "live_since": "2026-08-02",
    "as_of": "2026-08-03",
-   "value": 285692.88,
-   "total_return": 27.569288,
+   "value": 285692.9,
+   "total_return": 27.56929,
    "positions": [],
-   "cash": 285692.88,
+   "cash": 285692.9,
+   "trades_today": []
+  },
+  "momAB-S3": {
+   "index": "NASDAQ 100",
+   "live_since": "2026-08-04",
+   "as_of": "2026-08-03",
+   "value": 355652.34,
+   "total_return": 34.565234,
+   "positions": [],
+   "cash": 355652.34,
+   "trades_today": []
+  },
+  "momAB-S4": {
+   "index": "NASDAQ 100",
+   "live_since": "2026-08-04",
+   "as_of": "2026-08-03",
+   "value": 221489.33,
+   "total_return": 21.148933,
+   "positions": [],
+   "cash": 221489.33,
    "trades_today": []
   },
   "7fh": {

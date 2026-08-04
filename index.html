@@ -86,7 +86,8 @@ const COLS20 = [
   ["Ulcer", "Ulcer", v => v == null ? "" : v.toFixed(2)],
   ["dom_top1", "Dom top-1", fmtDom], ["dom_top2", "Dom top-2", fmtDom],
 ];
-const BOOKS = ["6f", "momAB", "momAB_k8u", "resAB", "7fh", "resAB_sp", "MAG7"];
+const BOOKS = ["6f", "momAB", "momAB_k8u", "resAB", "7fh", "resAB_sp", "MAG7",
+               "momAB-S1", "momAB-S2", "momAB-S3", "momAB-S4"];
 
 function bookDot(name) {
   return `<span class="dot" style="background:${COLORS[name]}"></span>`;
