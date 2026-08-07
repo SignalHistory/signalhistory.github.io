@@ -11,7 +11,7 @@
 <body>
 <div class="masthead">
   <a class="brand" href="index.html">◆ QUANT&nbsp;LINES</a>
-  <nav><a href="index.html">Live</a><a href="signals.html">Signals</a><a href="backtest.html">Backtest</a><a href="#verify">Verify&nbsp;✓</a></nav>
+  <nav><a href="index.html">Live</a><a href="signals.html">Signals</a><a href="backtest.html">Backtest</a><a href="#fresh">Equal&nbsp;start</a><a href="#verify">Verify&nbsp;✓</a></nav>
 </div>
 
 <h1>Live strategy test</h1>
@@ -58,6 +58,16 @@ peak-to-trough loss · <b>Martin</b> return / ulcer (drawdown-adjusted) ·
 <b>Ulcer</b> drawdown depth index · <b>Dom top-1 / top-2</b> share of days
 the line ranked #1 / top-2 by cumulative growth among the lines shown.
 </p>
+
+<h2 id="fresh">Equal start &mdash; $10,000 on 2026-08-06</h2>
+<p class="subtitle">A second live track, started from scratch on one day for
+every line at once. Nothing above this heading changes: the books, their
+history and their charts stay exactly as they were.</p>
+<div class="chartwrap"><div id="chartfresh"></div></div>
+<div class="legend" id="legendfresh"></div>
+<p class="note" id="freshnote"></p>
+<div id="tablefresh"></div>
+<div id="freshbook"></div>
 
 <div class="disclaimer">
   Public real-time test of systematic strategies, for information and research purposes
@@ -115,7 +125,7 @@ function renderBooks(live, lines) {
     }
     let h = `<p class="dateline">${bookDot(name)} <b>${name}</b> ` +
             `<span class="ix">${meta.index || ""}</span> · ` +
-            `started ${fmtUsd(live.start_capital)} on ${live.start} · ` +
+            `started ${fmtUsd(live.start_capital)} on ${s.start || live.start} · ` +
             `now <b>${fmtUsd(s.value)}</b> (${fmtSignedPct(s.total_return)}) · ` +
             `YTD ${fmtSignedPct(s.ytd)} · as of ${s.as_of || live.as_of}</p>`;
     h += "<h3>Portfolio</h3>";
@@ -162,6 +172,83 @@ function renderBooks(live, lines) {
   show(BOOKS.find(n => have[n]) || BOOKS[0]);
 }
 
+// ---- equal-start block ------------------------------------------------------
+// A second, self-contained live track: one start date for every line, guest
+// basket included.  It shares nothing with the blocks above except the
+// drawing helpers, so the 2020-anchored charts and tables are unaffected.
+function renderFresh(d) {
+  const f = d.fresh, note = document.getElementById("freshnote");
+  const holder = document.getElementById("chartfresh");
+  // the date lives in one place (the guest book's own start); the literal in
+  // the markup is only what shows before this script runs
+  if (f && f.start) document.getElementById("fresh").textContent =
+    "Equal start — $10,000 on " + f.start;
+  if (!f || !f.lines.length) {
+    // `f` is absent on a page served with data built before this block
+    // existed; the date in the heading above is the same constant
+    note.textContent = "This track opens with the first close on " +
+      ((f && f.start) || "2026-08-06") + " — nothing to plot yet.";
+    return;
+  }
+  // a chart needs at least two distinct timestamps, otherwise the x-scale
+  // collapses (min === max) and every coordinate comes out NaN
+  const stamps = new Set();
+  f.lines.forEach(l => l.curve.forEach(p => stamps.add(p[0])));
+  if (stamps.size >= 2) {
+    const ch = makeChart(holder, f.lines, {height: 380, dollar: 10000});
+    makeLegend(document.getElementById("legendfresh"), f.lines, ch);
+  } else {
+    // one point cannot be scaled into a chart — say so instead of drawing
+    holder.innerHTML = '<p class="note">One session so far — the curves ' +
+      "appear with the second close.</p>";
+  }
+  makeTable(document.getElementById("tablefresh"), f.lines, {cols: COLS26});
+  note.textContent = "Every line rebased to $10,000 on " + f.start +
+    ", data through " + f.end + ". A book that opens on that very day starts " +
+    "just below $10,000: its entry cost is shown rather than rebased away. " +
+    "Click a legend entry to hide a line, a " +
+    "column header to sort. This window is the only one on which CrCon can " +
+    "be compared with the books at all: it is a guest portfolio — a " +
+    "third-party basket tracked forward, with no earlier history and no " +
+    "backtest. Annualised figures stay blank until the track is a quarter " +
+    "old, because a two-week CAGR is not a number.";
+}
+
+function renderGuestBook(live, start) {
+  const box = document.getElementById("freshbook");
+  const s = live && live.strategies && live.strategies["CrCon"];
+  // data built before the fresh block existed carries no start — fall back
+  // to the same constant as the heading rather than printing "from ."
+  start = start || "2026-08-06";
+  let h = "<h3>CrCon — guest portfolio</h3>";
+  if (!s) {
+    box.innerHTML = h + '<p class="note">The basket is bought at the first ' +
+      "close from " + start + ".</p>";
+    return;
+  }
+  h += `<p class="dateline">${bookDot("CrCon")} <b>CrCon</b> ` +
+       `<span class="ix">${s.index || ""}</span> · started ` +
+       `${fmtUsd(live.start_capital)} on ${s.start || start} · now ` +
+       `<b>${fmtUsd(s.value)}</b> (${fmtSignedPct(s.total_return)}) · ` +
+       `as of ${s.as_of || live.as_of}</p>`;
+  h += '<table class="sig"><thead><tr><th>Ticker</th><th>Entered</th>' +
+       "<th>Value</th><th>Weight</th><th>P&amp;L</th></tr></thead><tbody>";
+  s.positions.forEach(p => {
+    h += `<tr><td class="l">${p.ticker}</td><td>${p.entry_date || ""}</td>` +
+         `<td>${fmtUsd(p.value)}</td><td>${fmtPct(p.weight)}</td>` +
+         `<td class="${p.pnl_pct >= 0 ? "up" : "dn"}">${fmtSignedPct(p.pnl_pct)}</td></tr>`;
+  });
+  if (s.cash > s.value * 0.001) {
+    h += `<tr class="bench"><td class="l">(cash)</td><td></td>` +
+         `<td>${fmtUsd(s.cash)}</td><td>${fmtPct(s.cash / s.value)}</td><td></td></tr>`;
+  }
+  h += "</tbody></table>";
+  h += '<p class="note">Bought once in target weights and held without ' +
+       "rebalancing, so the weights drift with the prices. Trades are in the " +
+       '<a href="signals.html">signals history</a> like every other book.</p>';
+  box.innerHTML = h;
+}
+
 fetch("data/history.json").then(r => r.json()).then(d => {
   const m = d.main, lines = m.lines;
   const boundary = m.live_boundary ? new Date(m.live_boundary).getTime() / 1000 : null;
@@ -200,6 +287,8 @@ fetch("data/history.json").then(r => r.json()).then(d => {
   makeTable(document.getElementById("table20"), lines, {cols: COLS20});
 
   renderBooks(d.live, lines);
+  renderFresh(d);
+  renderGuestBook(d.live, (d.fresh && d.fresh.start) || "");
 
   document.getElementById("livenote").textContent =
     "These curves ARE the live books shown above — same portfolios, same " +

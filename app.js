@@ -11,6 +11,8 @@ const COLORS = {
   "magAB_k8g_cut2": "#4a148c", "magAB_k8g_cut4": "#827717",
   "momAB-S1": "#0d9488", "momAB-S2": "#1d4ed8",
   "momAB-S3": "#9d174d", "momAB-S4": "#be123c",
+  // guest buy&hold basket, live-only (no backtest by design)
+  "CrCon": "#5b21b6",
   // muted-but-tinted reference lines: bronze / slate-blue / sage-green
   "MAG7": "#a08c6a", "QQQ": "#7b87a8", "S&P 500": "#7d9b7a",
 };
