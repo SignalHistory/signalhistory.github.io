@@ -9,15 +9,15 @@
    "live_since": "2026-07-16",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 51290.79,
-   "total_return": 4.130041,
+   "value": 51290.81,
+   "total_return": 4.130042,
    "positions": [
     {
      "entry_date": "2026-09-10",
      "pnl_pct": 0.218605,
      "shares": 11.2692,
      "ticker": "AMD",
-     "value": 6926.18,
+     "value": 6926.19,
      "weight": 0.135
     },
     {
@@ -25,7 +25,7 @@
      "pnl_pct": 0.144201,
      "shares": 6.2398,
      "ticker": "MU",
-     "value": 6688.35,
+     "value": 6688.36,
      "weight": 0.1304
     },
     {
@@ -102,8 +102,8 @@
    "live_since": "2026-07-16",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 100972.91,
-   "total_return": 9.099185,
+   "value": 100972.95,
+   "total_return": 9.099188,
    "positions": [
     {
      "entry_date": "2026-09-15",
@@ -126,7 +126,7 @@
      "pnl_pct": -0.001498,
      "shares": 35.0283,
      "ticker": "ALAB",
-     "value": 12626.3,
+     "value": 12626.31,
      "weight": 0.125
     },
     {
@@ -142,7 +142,7 @@
      "pnl_pct": 0.052808,
      "shares": 11.4869,
      "ticker": "MU",
-     "value": 12312.62,
+     "value": 12312.63,
      "weight": 0.1219
     },
     {
@@ -170,7 +170,7 @@
      "weight": 0.1088
     }
    ],
-   "cash": 3777.75,
+   "cash": 3777.77,
    "trades_today": [
     {
      "date": "2026-09-23",
@@ -195,8 +195,8 @@
    "live_since": "2026-07-20",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 249198.22,
-   "total_return": 23.919822,
+   "value": 249198.26,
+   "total_return": 23.919826,
    "positions": [
     {
      "entry_date": "2026-09-15",
@@ -235,7 +235,7 @@
      "pnl_pct": 0.012294,
      "shares": 25.9461,
      "ticker": "SNDK",
-     "value": 15485.25,
+     "value": 15485.26,
      "weight": 0.0621
     },
     {
@@ -251,7 +251,7 @@
      "pnl_pct": 0.214805,
      "shares": 25.3413,
      "ticker": "SNDK",
-     "value": 15124.28,
+     "value": 15124.29,
      "weight": 0.0607
     },
     {
@@ -263,7 +263,7 @@
      "weight": 0.0607
     }
    ],
-   "cash": 126009.18,
+   "cash": 126009.2,
    "trades_today": []
   },
   "resAB": {
@@ -406,7 +406,7 @@
      "entry_date": "2026-07-01",
      "pnl_pct": -0.064126,
      "ticker": "GOOGL",
-     "value": 6305.88,
+     "value": 6305.87,
      "weight": 0.1262
     },
     {
@@ -417,7 +417,7 @@
      "weight": 0.1205
     }
    ],
-   "cash": 0.0,
+   "cash": 0.01,
    "trades_today": []
   },
   "MAG200": {
@@ -425,8 +425,8 @@
    "live_since": "2026-07-24",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 44515.79,
-   "total_return": 3.451579,
+   "value": 44515.8,
+   "total_return": 3.45158,
    "positions": [
     {
      "entry_date": "2026-07-01",
@@ -453,7 +453,7 @@
      "entry_date": "2026-07-01",
      "pnl_pct": 0.03132,
      "ticker": "AMZN",
-     "value": 6187.69,
+     "value": 6187.7,
      "weight": 0.139
     },
     {
@@ -486,8 +486,8 @@
    "live_since": "2026-07-25",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 128962.56,
-   "total_return": 11.896256,
+   "value": 128962.57,
+   "total_return": 11.896257,
    "positions": [
     {
      "entry_date": "2026-09-15",
@@ -526,7 +526,7 @@
      "pnl_pct": 0.012294,
      "shares": 25.9461,
      "ticker": "SNDK",
-     "value": 8013.77,
+     "value": 8013.78,
      "weight": 0.0621
     },
     {
@@ -562,15 +562,15 @@
    "live_since": "2026-07-25",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 61340.8,
-   "total_return": 5.13408,
+   "value": 61340.75,
+   "total_return": 5.134075,
    "positions": [
     {
      "entry_date": "2026-08-24",
      "pnl_pct": -0.030222,
      "shares": 30.6208,
      "ticker": "GOOGL",
-     "value": 7535.18,
+     "value": 7535.17,
      "weight": 0.1228
     },
     {
@@ -578,7 +578,7 @@
      "pnl_pct": -0.011211,
      "shares": 46.1482,
      "ticker": "NVDA",
-     "value": 7580.52,
+     "value": 7580.51,
      "weight": 0.1236
     },
     {
@@ -586,7 +586,7 @@
      "pnl_pct": 0.035017,
      "shares": 32.0419,
      "ticker": "AAPL",
-     "value": 7865.97,
+     "value": 7865.96,
      "weight": 0.1282
     },
     {
@@ -594,7 +594,7 @@
      "pnl_pct": -0.021426,
      "shares": 45.9387,
      "ticker": "NVDA",
-     "value": 7546.1,
+     "value": 7546.09,
      "weight": 0.123
     },
     {
@@ -610,7 +610,7 @@
      "pnl_pct": 0.015619,
      "shares": 31.197,
      "ticker": "AAPL",
-     "value": 7658.55,
+     "value": 7658.54,
      "weight": 0.1249
     },
     {
@@ -626,11 +626,11 @@
      "pnl_pct": -0.001498,
      "shares": 31.2973,
      "ticker": "AAPL",
-     "value": 7683.18,
+     "value": 7683.17,
      "weight": 0.1253
     }
    ],
-   "cash": 0.0,
+   "cash": 0.01,
    "trades_today": []
   },
   "magAB_k8g_cut2": {
@@ -638,15 +638,15 @@
    "live_since": "2026-07-29",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 61340.8,
-   "total_return": 5.13408,
+   "value": 61340.75,
+   "total_return": 5.134075,
    "positions": [
     {
      "entry_date": "2026-08-24",
      "pnl_pct": -0.030222,
      "shares": 30.6208,
      "ticker": "GOOGL",
-     "value": 7535.18,
+     "value": 7535.17,
      "weight": 0.1228
     },
     {
@@ -654,7 +654,7 @@
      "pnl_pct": -0.011211,
      "shares": 46.1482,
      "ticker": "NVDA",
-     "value": 7580.52,
+     "value": 7580.51,
      "weight": 0.1236
     },
     {
@@ -662,7 +662,7 @@
      "pnl_pct": 0.035017,
      "shares": 32.0419,
      "ticker": "AAPL",
-     "value": 7865.97,
+     "value": 7865.96,
      "weight": 0.1282
     },
     {
@@ -670,7 +670,7 @@
      "pnl_pct": -0.021426,
      "shares": 45.9387,
      "ticker": "NVDA",
-     "value": 7546.1,
+     "value": 7546.09,
      "weight": 0.123
     },
     {
@@ -686,7 +686,7 @@
      "pnl_pct": 0.015619,
      "shares": 31.197,
      "ticker": "AAPL",
-     "value": 7658.55,
+     "value": 7658.54,
      "weight": 0.1249
     },
     {
@@ -702,11 +702,11 @@
      "pnl_pct": -0.001498,
      "shares": 31.2973,
      "ticker": "AAPL",
-     "value": 7683.18,
+     "value": 7683.17,
      "weight": 0.1253
     }
    ],
-   "cash": 0.0,
+   "cash": 0.01,
    "trades_today": []
   },
   "magAB_k8g_cut4": {
@@ -714,15 +714,15 @@
    "live_since": "2026-07-29",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 65657.79,
-   "total_return": 5.565779,
+   "value": 65657.68,
+   "total_return": 5.565768,
    "positions": [
     {
      "entry_date": "2026-08-24",
      "pnl_pct": -0.030222,
-     "shares": 30.9449,
+     "shares": 30.9448,
      "ticker": "GOOGL",
-     "value": 8065.49,
+     "value": 8065.47,
      "weight": 0.1228
     },
     {
@@ -730,7 +730,7 @@
      "pnl_pct": -0.011211,
      "shares": 46.6365,
      "ticker": "NVDA",
-     "value": 8114.01,
+     "value": 8114.0,
      "weight": 0.1236
     },
     {
@@ -738,15 +738,15 @@
      "pnl_pct": 0.035017,
      "shares": 32.3809,
      "ticker": "AAPL",
-     "value": 8419.55,
+     "value": 8419.54,
      "weight": 0.1282
     },
     {
      "entry_date": "2026-09-04",
      "pnl_pct": -0.021426,
-     "shares": 46.4248,
+     "shares": 46.4247,
      "ticker": "NVDA",
-     "value": 8077.17,
+     "value": 8077.16,
      "weight": 0.123
     },
     {
@@ -754,7 +754,7 @@
      "pnl_pct": 0.030454,
      "shares": 31.9166,
      "ticker": "AAPL",
-     "value": 8298.82,
+     "value": 8298.81,
      "weight": 0.1264
     },
     {
@@ -762,23 +762,23 @@
      "pnl_pct": 0.015619,
      "shares": 31.5271,
      "ticker": "AAPL",
-     "value": 8197.54,
+     "value": 8197.52,
      "weight": 0.1249
     },
     {
      "entry_date": "2026-09-18",
      "pnl_pct": 0.001146,
-     "shares": 31.7724,
+     "shares": 31.7723,
      "ticker": "AAPL",
-     "value": 8261.31,
+     "value": 8261.3,
      "weight": 0.1258
     },
     {
      "entry_date": "2026-09-23",
      "pnl_pct": -0.001498,
-     "shares": 31.6285,
+     "shares": 31.6284,
      "ticker": "AAPL",
-     "value": 8223.9,
+     "value": 8223.88,
      "weight": 0.1253
     }
    ],
@@ -790,8 +790,8 @@
    "live_since": "2026-08-02",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 406624.89,
-   "total_return": 39.662489,
+   "value": 406624.86,
+   "total_return": 39.662486,
    "positions": [
     {
      "entry_date": "2026-06-01",
@@ -838,7 +838,7 @@
      "pnl_pct": 0.270763,
      "shares": 112.6688,
      "ticker": "AMD",
-     "value": 57439.31,
+     "value": 57439.3,
      "weight": 0.1413
     },
     {
@@ -846,7 +846,7 @@
      "pnl_pct": 0.276047,
      "shares": 111.6332,
      "ticker": "AMD",
-     "value": 56911.36,
+     "value": 56911.35,
      "weight": 0.14
     },
     {
@@ -858,7 +858,7 @@
      "weight": 0.1364
     }
    ],
-   "cash": 0.0,
+   "cash": -0.01,
    "trades_today": []
   },
   "momAB-S2": {
@@ -866,15 +866,15 @@
    "live_since": "2026-08-02",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 392537.6,
-   "total_return": 38.25376,
+   "value": 392537.51,
+   "total_return": 38.253751,
    "positions": [
     {
      "entry_date": "2026-06-01",
      "pnl_pct": 0.033741,
      "shares": 68.7791,
      "ticker": "MU",
-     "value": 47054.45,
+     "value": 47054.44,
      "weight": 0.1199
     },
     {
@@ -882,7 +882,7 @@
      "pnl_pct": -0.016131,
      "shares": 68.765,
      "ticker": "MU",
-     "value": 47044.79,
+     "value": 47044.78,
      "weight": 0.1198
     },
     {
@@ -890,7 +890,7 @@
      "pnl_pct": -0.072643,
      "shares": 68.7346,
      "ticker": "MU",
-     "value": 47024.03,
+     "value": 47024.02,
      "weight": 0.1198
     },
     {
@@ -898,7 +898,7 @@
      "pnl_pct": 0.123126,
      "shares": 38.587,
      "ticker": "SNDK",
-     "value": 44739.55,
+     "value": 44739.54,
      "weight": 0.114
     },
     {
@@ -906,7 +906,7 @@
      "pnl_pct": 0.785478,
      "shares": 48.8569,
      "ticker": "SNDK",
-     "value": 56646.91,
+     "value": 56646.9,
      "weight": 0.1443
     },
     {
@@ -914,15 +914,15 @@
      "pnl_pct": 0.349299,
      "shares": 46.0093,
      "ticker": "SNDK",
-     "value": 53345.31,
+     "value": 53345.29,
      "weight": 0.1359
     },
     {
      "entry_date": "2026-08-26",
      "pnl_pct": 0.209741,
-     "shares": 43.709,
+     "shares": 43.7089,
      "ticker": "SNDK",
-     "value": 50678.12,
+     "value": 50678.11,
      "weight": 0.1291
     },
     {
@@ -930,7 +930,7 @@
      "pnl_pct": 0.071641,
      "shares": 39.678,
      "ticker": "SNDK",
-     "value": 46004.44,
+     "value": 46004.43,
      "weight": 0.1172
     }
    ],
@@ -942,15 +942,15 @@
    "live_since": "2026-08-04",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 488673.65,
-   "total_return": 47.867365,
+   "value": 488673.5,
+   "total_return": 47.86735,
    "positions": [
     {
      "entry_date": "2026-06-01",
      "pnl_pct": 0.033741,
-     "shares": 95.0883,
+     "shares": 95.0882,
      "ticker": "MU",
-     "value": 58580.3,
+     "value": 58580.28,
      "weight": 0.1199
     },
     {
@@ -958,7 +958,7 @@
      "pnl_pct": -0.016131,
      "shares": 95.069,
      "ticker": "MU",
-     "value": 58568.42,
+     "value": 58568.4,
      "weight": 0.1199
     },
     {
@@ -966,7 +966,7 @@
      "pnl_pct": -0.072643,
      "shares": 95.0275,
      "ticker": "MU",
-     "value": 58542.89,
+     "value": 58542.87,
      "weight": 0.1198
     },
     {
@@ -974,7 +974,7 @@
      "pnl_pct": 0.123126,
      "shares": 53.3453,
      "ticker": "SNDK",
-     "value": 55696.4,
+     "value": 55696.39,
      "weight": 0.114
     },
     {
@@ -982,7 +982,7 @@
      "pnl_pct": 0.785478,
      "shares": 67.5403,
      "ticker": "SNDK",
-     "value": 70516.93,
+     "value": 70516.91,
      "weight": 0.1443
     },
     {
@@ -990,7 +990,7 @@
      "pnl_pct": 0.349299,
      "shares": 63.6062,
      "ticker": "SNDK",
-     "value": 66409.48,
+     "value": 66409.46,
      "weight": 0.1359
     },
     {
@@ -998,7 +998,7 @@
      "pnl_pct": 0.209741,
      "shares": 60.4262,
      "ticker": "SNDK",
-     "value": 63089.35,
+     "value": 63089.33,
      "weight": 0.1291
     },
     {
@@ -1006,7 +1006,7 @@
      "pnl_pct": 0.071641,
      "shares": 54.8524,
      "ticker": "SNDK",
-     "value": 57269.88,
+     "value": 57269.86,
      "weight": 0.1172
     }
    ],
@@ -1018,15 +1018,15 @@
    "live_since": "2026-08-04",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 299993.91,
-   "total_return": 28.999391,
+   "value": 299993.85,
+   "total_return": 28.999385,
    "positions": [
     {
      "entry_date": "2026-06-01",
      "pnl_pct": 0.033741,
      "shares": 52.3313,
      "ticker": "MU",
-     "value": 36154.28,
+     "value": 36154.27,
      "weight": 0.1205
     },
     {
@@ -1034,7 +1034,7 @@
      "pnl_pct": -0.016131,
      "shares": 52.7552,
      "ticker": "MU",
-     "value": 36447.19,
+     "value": 36447.18,
      "weight": 0.1215
     },
     {
@@ -1042,7 +1042,7 @@
      "pnl_pct": -0.072643,
      "shares": 52.824,
      "ticker": "MU",
-     "value": 36494.71,
+     "value": 36494.7,
      "weight": 0.1217
     },
     {
@@ -1050,7 +1050,7 @@
      "pnl_pct": 0.123126,
      "shares": 29.6483,
      "ticker": "SNDK",
-     "value": 34713.95,
+     "value": 34713.94,
      "weight": 0.1157
     },
     {
@@ -1058,7 +1058,7 @@
      "pnl_pct": 0.785478,
      "shares": 37.6955,
      "ticker": "SNDK",
-     "value": 44136.06,
+     "value": 44136.05,
      "weight": 0.1471
     },
     {
@@ -1066,7 +1066,7 @@
      "pnl_pct": 0.349299,
      "shares": 35.2256,
      "ticker": "SNDK",
-     "value": 41244.14,
+     "value": 41244.13,
      "weight": 0.1375
     },
     {
@@ -1074,7 +1074,7 @@
      "pnl_pct": 0.209741,
      "shares": 33.0328,
      "ticker": "SNDK",
-     "value": 38676.78,
+     "value": 38676.77,
      "weight": 0.1289
     },
     {
@@ -1082,11 +1082,11 @@
      "pnl_pct": 0.071641,
      "shares": 27.4387,
      "ticker": "SNDK",
-     "value": 32126.81,
+     "value": 32126.8,
      "weight": 0.1071
     }
    ],
-   "cash": -0.01,
+   "cash": 0.01,
    "trades_today": []
   },
   "momAB-safe": {
@@ -1094,8 +1094,8 @@
    "live_since": "2026-09-04",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 314077.5,
-   "total_return": 30.40775,
+   "value": 314077.52,
+   "total_return": 30.407752,
    "positions": [
     {
      "entry_date": "2026-06-01",
@@ -1110,7 +1110,7 @@
      "pnl_pct": -0.016131,
      "shares": 52.7552,
      "ticker": "MU",
-     "value": 38158.24,
+     "value": 38158.25,
      "weight": 0.1215
     },
     {
@@ -1162,7 +1162,7 @@
      "weight": 0.1071
     }
    ],
-   "cash": -0.01,
+   "cash": 0.0,
    "trades_today": []
   },
   "momAB-good": {
@@ -1170,15 +1170,15 @@
    "live_since": "2026-09-04",
    "start": "2020-01-02",
    "as_of": "2026-09-23",
-   "value": 60245.6,
-   "total_return": 5.02456,
+   "value": 60245.57,
+   "total_return": 5.024557,
    "positions": [
     {
      "entry_date": "2026-06-01",
      "pnl_pct": -0.102632,
      "shares": 28.9969,
      "ticker": "GOOGL",
-     "value": 7196.44,
+     "value": 7196.43,
      "weight": 0.1195
     },
     {
@@ -1210,7 +1210,7 @@
      "pnl_pct": -0.004094,
      "shares": 30.5515,
      "ticker": "AAPL",
-     "value": 7564.09,
+     "value": 7564.08,
      "weight": 0.1256
     },
     {
@@ -1218,13 +1218,13 @@
      "pnl_pct": -0.068779,
      "shares": 38.1047,
      "ticker": "AMZN",
-     "value": 6977.77,
+     "value": 6977.76,
      "weight": 0.1158
     },
     {
      "entry_date": "2026-08-26",
      "pnl_pct": -0.013039,
-     "shares": 29.8708,
+     "shares": 29.8707,
      "ticker": "GOOGL",
      "value": 7413.31,
      "weight": 0.1231
