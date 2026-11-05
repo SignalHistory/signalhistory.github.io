@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-03",
+ "as_of": "2026-11-04",
  "start": "2020-01-02",
  "start_capital": 10000.0,
  "note": "positions and trades of the latest trading day per strategy; full journal in signals_journal.json; the commit history of this repository is the timestamp",
@@ -8,362 +8,413 @@
    "index": "NASDAQ 100",
    "live_since": "2026-07-16",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 40272.56,
-   "total_return": 3.028011,
+   "as_of": "2026-11-04",
+   "value": 38966.12,
+   "total_return": 2.897343,
    "positions": [
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": 0.026786,
+     "pnl_pct": 0.011343,
      "shares": 22.7522,
      "ticker": "CRWD",
-     "value": 5567.02,
-     "weight": 0.1382
-    },
-    {
-     "entry_date": "2026-10-09",
-     "pnl_pct": -0.170113,
-     "shares": 6.4245,
-     "ticker": "MU",
-     "value": 5493.63,
-     "weight": 0.1364
+     "value": 5483.29,
+     "weight": 0.1407
     },
     {
      "entry_date": "2026-10-06",
-     "pnl_pct": -0.123885,
+     "pnl_pct": -0.137061,
      "shares": 22.3848,
      "ticker": "CRWD",
-     "value": 5477.12,
-     "weight": 0.136
+     "value": 5394.74,
+     "weight": 0.1384
     },
     {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.215281,
-     "shares": 11.0132,
-     "ticker": "AMD",
-     "value": 5329.3,
-     "weight": 0.1323
+     "entry_date": "2026-10-09",
+     "pnl_pct": -0.228218,
+     "shares": 6.4245,
+     "ticker": "MU",
+     "value": 5108.99,
+     "weight": 0.1311
+    },
+    {
+     "entry_date": "2026-11-04",
+     "pnl_pct": -0.001498,
+     "shares": 31.8414,
+     "ticker": "SHOP",
+     "value": 4872.69,
+     "weight": 0.125
     },
     {
      "entry_date": "2026-10-30",
-     "pnl_pct": -0.048736,
+     "pnl_pct": -0.068802,
      "shares": 27.8392,
      "ticker": "PLTR",
-     "value": 4883.0,
-     "weight": 0.1212
+     "value": 4779.99,
+     "weight": 0.1227
     },
     {
      "entry_date": "2026-10-27",
-     "pnl_pct": -0.215935,
+     "pnl_pct": -0.277504,
      "shares": 6.9057,
      "ticker": "LITE",
-     "value": 4696.98,
-     "weight": 0.1166
+     "value": 4328.15,
+     "weight": 0.1111
     },
     {
      "entry_date": "2026-10-19",
-     "pnl_pct": -0.18618,
+     "pnl_pct": -0.250085,
      "shares": 6.8163,
      "ticker": "LITE",
-     "value": 4636.2,
-     "weight": 0.1151
+     "value": 4272.14,
+     "weight": 0.1096
     },
     {
      "entry_date": "2026-10-14",
-     "pnl_pct": -0.304982,
+     "pnl_pct": -0.298037,
      "shares": 32.7009,
      "ticker": "FTNT",
-     "value": 4189.31,
-     "weight": 0.104
+     "value": 4231.16,
+     "weight": 0.1086
     }
    ],
-   "cash": 0.0,
-   "trades_today": []
+   "cash": 494.97,
+   "trades_today": [
+    {
+     "date": "2026-11-04",
+     "side": "SELL",
+     "ticker": "AMD",
+     "shares": 11.0132,
+     "price": 488.78,
+     "cost": 8.07
+    },
+    {
+     "date": "2026-11-04",
+     "side": "BUY",
+     "ticker": "SHOP",
+     "shares": 31.8414,
+     "price": 153.03,
+     "cost": 7.31
+    }
+   ]
   },
   "momAB": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-16",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 77954.99,
-   "total_return": 6.796961,
+   "as_of": "2026-11-04",
+   "value": 75647.54,
+   "total_return": 6.566172,
    "positions": [
     {
      "entry_date": "2026-10-06",
-     "pnl_pct": -0.123885,
+     "pnl_pct": -0.137061,
      "shares": 44.6556,
      "ticker": "CRWD",
-     "value": 10926.32,
-     "weight": 0.1402
-    },
-    {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.215281,
-     "shares": 22.2656,
-     "ticker": "AMD",
-     "value": 10774.34,
-     "weight": 0.1382
-    },
-    {
-     "entry_date": "2026-10-09",
-     "pnl_pct": -0.170113,
-     "shares": 12.3774,
-     "ticker": "MU",
-     "value": 10583.9,
-     "weight": 0.1358
+     "value": 10761.99,
+     "weight": 0.1423
     },
     {
      "entry_date": "2026-10-27",
-     "pnl_pct": -0.08845,
+     "pnl_pct": -0.10216,
      "shares": 42.1707,
      "ticker": "CRWD",
-     "value": 10318.32,
-     "weight": 0.1324
+     "value": 10163.13,
+     "weight": 0.1343
+    },
+    {
+     "entry_date": "2026-10-09",
+     "pnl_pct": -0.228218,
+     "shares": 12.3774,
+     "ticker": "MU",
+     "value": 9842.87,
+     "weight": 0.1301
     },
     {
      "entry_date": "2026-10-30",
-     "pnl_pct": -0.044263,
+     "pnl_pct": -0.050158,
      "shares": 27.5362,
      "ticker": "PANW",
-     "value": 9643.17,
-     "weight": 0.1237
+     "value": 9583.69,
+     "weight": 0.1267
+    },
+    {
+     "entry_date": "2026-11-04",
+     "pnl_pct": -0.001498,
+     "shares": 27.1801,
+     "ticker": "PANW",
+     "value": 9459.76,
+     "weight": 0.1251
     },
     {
      "entry_date": "2026-10-19",
-     "pnl_pct": -0.179625,
+     "pnl_pct": -0.244525,
      "shares": 7.6279,
      "ticker": "SNDK",
-     "value": 8592.98,
-     "weight": 0.1102
-    },
-    {
-     "entry_date": "2026-10-14",
-     "pnl_pct": -0.19846,
-     "shares": 7.4387,
-     "ticker": "SNDK",
-     "value": 8379.83,
-     "weight": 0.1075
+     "value": 7913.18,
+     "weight": 0.1046
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": -0.260503,
+     "pnl_pct": -0.253115,
      "shares": 60.2833,
      "ticker": "FTNT",
-     "value": 7722.9,
-     "weight": 0.0991
+     "value": 7800.06,
+     "weight": 0.1031
+    },
+    {
+     "entry_date": "2026-10-14",
+     "pnl_pct": -0.261871,
+     "shares": 7.4387,
+     "ticker": "SNDK",
+     "value": 7716.89,
+     "weight": 0.102
     }
    ],
-   "cash": 1013.23,
-   "trades_today": []
+   "cash": 2405.97,
+   "trades_today": [
+    {
+     "date": "2026-11-04",
+     "side": "SELL",
+     "ticker": "AMD",
+     "shares": 22.2656,
+     "price": 488.78,
+     "cost": 16.32
+    },
+    {
+     "date": "2026-11-04",
+     "side": "BUY",
+     "ticker": "PANW",
+     "shares": 27.1801,
+     "price": 348.04,
+     "cost": 14.19
+    }
+   ]
   },
   "momAB_k8u": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-20",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 194731.6,
-   "total_return": 18.47316,
+   "as_of": "2026-11-04",
+   "value": 189650.74,
+   "total_return": 17.965074,
    "positions": [
     {
      "entry_date": "2026-10-27",
-     "pnl_pct": -0.08845,
+     "pnl_pct": -0.10216,
      "shares": 125.9288,
      "ticker": "CRWD",
-     "value": 12599.92,
-     "weight": 0.0647
-    },
-    {
-     "entry_date": "2026-10-19",
-     "pnl_pct": -0.179625,
-     "shares": 25.9499,
-     "ticker": "SNDK",
-     "value": 11954.18,
-     "weight": 0.0614
-    },
-    {
-     "entry_date": "2026-10-14",
-     "pnl_pct": -0.19846,
-     "shares": 25.9499,
-     "ticker": "SNDK",
-     "value": 11954.14,
-     "weight": 0.0614
-    },
-    {
-     "entry_date": "2026-10-09",
-     "pnl_pct": -0.2889,
-     "shares": 25.9495,
-     "ticker": "SNDK",
-     "value": 11953.99,
-     "weight": 0.0614
-    },
-    {
-     "entry_date": "2026-10-06",
-     "pnl_pct": -0.322578,
-     "shares": 25.9494,
-     "ticker": "SNDK",
-     "value": 11953.94,
-     "weight": 0.0614
-    },
-    {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.37079,
-     "shares": 25.9084,
-     "ticker": "SNDK",
-     "value": 11935.02,
-     "weight": 0.0613
+     "value": 12812.76,
+     "weight": 0.0676
     },
     {
      "entry_date": "2026-10-30",
-     "pnl_pct": -0.024424,
+     "pnl_pct": -0.039097,
      "shares": 117.9957,
      "ticker": "CRWD",
-     "value": 11806.16,
-     "weight": 0.0606
+     "value": 12005.6,
+     "weight": 0.0633
+    },
+    {
+     "entry_date": "2026-11-04",
+     "pnl_pct": -0.001498,
+     "shares": 112.4783,
+     "ticker": "CRWD",
+     "value": 11444.23,
+     "weight": 0.0603
+    },
+    {
+     "entry_date": "2026-10-19",
+     "pnl_pct": -0.244525,
+     "shares": 25.95,
+     "ticker": "SNDK",
+     "value": 11365.37,
+     "weight": 0.0599
+    },
+    {
+     "entry_date": "2026-10-14",
+     "pnl_pct": -0.261871,
+     "shares": 25.9499,
+     "ticker": "SNDK",
+     "value": 11365.33,
+     "weight": 0.0599
+    },
+    {
+     "entry_date": "2026-10-09",
+     "pnl_pct": -0.345155,
+     "shares": 25.9495,
+     "ticker": "SNDK",
+     "value": 11365.19,
+     "weight": 0.0599
+    },
+    {
+     "entry_date": "2026-10-06",
+     "pnl_pct": -0.376169,
+     "shares": 25.9494,
+     "ticker": "SNDK",
+     "value": 11365.15,
+     "weight": 0.0599
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": -0.260503,
+     "pnl_pct": -0.253115,
      "shares": 188.9585,
      "ticker": "FTNT",
-     "value": 9899.05,
-     "weight": 0.0508
+     "value": 10322.09,
+     "weight": 0.0544
     }
    ],
-   "cash": 100675.2,
+   "cash": 97605.02,
    "trades_today": []
   },
   "resAB": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-20",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 124894.44,
-   "total_return": 11.491787,
+   "as_of": "2026-11-04",
+   "value": 120102.66,
+   "total_return": 11.012518,
    "positions": [
     {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.081839,
-     "shares": 80.7923,
-     "ticker": "CRWD",
-     "value": 19768.25,
-     "weight": 0.1583
-    },
-    {
      "entry_date": "2026-10-06",
-     "pnl_pct": -0.123885,
+     "pnl_pct": -0.137061,
      "shares": 76.3009,
      "ticker": "CRWD",
-     "value": 18669.31,
-     "weight": 0.1495
+     "value": 18388.52,
+     "weight": 0.1531
     },
     {
      "entry_date": "2026-10-19",
-     "pnl_pct": -0.056449,
+     "pnl_pct": -0.122512,
      "shares": 19.3427,
      "ticker": "MU",
-     "value": 16539.98,
-     "weight": 0.1324
+     "value": 15381.93,
+     "weight": 0.1281
     },
     {
-     "entry_date": "2026-10-09",
-     "pnl_pct": -0.170113,
-     "shares": 18.3695,
-     "ticker": "MU",
-     "value": 15707.73,
-     "weight": 0.1258
+     "entry_date": "2026-11-04",
+     "pnl_pct": -0.001498,
+     "shares": 62.2974,
+     "ticker": "CRWD",
+     "value": 15013.67,
+     "weight": 0.125
     },
     {
      "entry_date": "2026-10-30",
-     "pnl_pct": -0.044263,
+     "pnl_pct": -0.050158,
      "shares": 42.2694,
      "ticker": "PANW",
-     "value": 14802.73,
-     "weight": 0.1185
+     "value": 14711.43,
+     "weight": 0.1225
     },
     {
-     "entry_date": "2026-10-27",
-     "pnl_pct": -0.215904,
-     "shares": 66.2172,
-     "ticker": "DDOG",
-     "value": 14602.23,
-     "weight": 0.1169
+     "entry_date": "2026-10-09",
+     "pnl_pct": -0.228218,
+     "shares": 18.3695,
+     "ticker": "MU",
+     "value": 14607.95,
+     "weight": 0.1216
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": -0.260503,
+     "pnl_pct": -0.253115,
      "shares": 98.2019,
      "ticker": "FTNT",
-     "value": 12580.65,
-     "weight": 0.1007
+     "value": 12706.35,
+     "weight": 0.1058
+    },
+    {
+     "entry_date": "2026-10-27",
+     "pnl_pct": -0.328975,
+     "shares": 66.2172,
+     "ticker": "DDOG",
+     "value": 12496.52,
+     "weight": 0.104
     },
     {
      "entry_date": "2026-10-14",
-     "pnl_pct": -0.304982,
+     "pnl_pct": -0.298037,
      "shares": 95.4146,
      "ticker": "FTNT",
-     "value": 12223.57,
-     "weight": 0.0979
+     "value": 12345.7,
+     "weight": 0.1028
     }
    ],
-   "cash": -0.01,
-   "trades_today": []
+   "cash": 4450.59,
+   "trades_today": [
+    {
+     "date": "2026-11-04",
+     "side": "BUY",
+     "ticker": "CRWD",
+     "shares": 62.2974,
+     "price": 241.0,
+     "cost": 22.52
+    },
+    {
+     "date": "2026-11-04",
+     "side": "SELL",
+     "ticker": "CRWD",
+     "shares": 80.7923,
+     "price": 241.0,
+     "cost": 29.21
+    }
+   ]
   },
   "MAG7": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-16",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 48674.47,
-   "total_return": 3.867447,
+   "as_of": "2026-11-04",
+   "value": 49837.58,
+   "total_return": 3.983758,
    "positions": [
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": 0.015971,
+     "pnl_pct": 0.083853,
      "ticker": "MSFT",
-     "value": 7534.13,
-     "weight": 0.1548
+     "value": 8037.52,
+     "weight": 0.1613
     },
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": 0.00991,
+     "pnl_pct": 0.071708,
      "ticker": "AMZN",
-     "value": 7489.18,
-     "weight": 0.1539
+     "value": 7947.45,
+     "weight": 0.1595
     },
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": 0.004783,
+     "pnl_pct": 0.058095,
      "ticker": "AAPL",
-     "value": 7451.16,
-     "weight": 0.1531
+     "value": 7846.51,
+     "weight": 0.1574
     },
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": -0.045654,
+     "pnl_pct": -0.082056,
      "ticker": "SPCX",
-     "value": 7077.13,
-     "weight": 0.1454
+     "value": 6807.19,
+     "weight": 0.1366
     },
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": -0.104695,
-     "ticker": "NVDA",
-     "value": 6639.3,
-     "weight": 0.1364
-    },
-    {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.144504,
+     "pnl_pct": -0.132148,
      "ticker": "META",
-     "value": 6344.09,
-     "weight": 0.1303
+     "value": 6435.72,
+     "weight": 0.1291
     },
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": -0.172097,
+     "pnl_pct": -0.133111,
+     "ticker": "NVDA",
+     "value": 6428.58,
+     "weight": 0.129
+    },
+    {
+     "entry_date": "2026-10-01",
+     "pnl_pct": -0.145784,
      "ticker": "GOOGL",
-     "value": 6139.47,
-     "weight": 0.1261
+     "value": 6334.6,
+     "weight": 0.1271
     }
    ],
    "cash": 0.01,
@@ -373,58 +424,58 @@
    "index": "NASDAQ 100",
    "live_since": "2026-07-24",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 43757.93,
-   "total_return": 3.375793,
+   "as_of": "2026-11-04",
+   "value": 44803.56,
+   "total_return": 3.480356,
    "positions": [
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": 0.015971,
+     "pnl_pct": 0.083853,
      "ticker": "MSFT",
-     "value": 6773.73,
-     "weight": 0.1548
+     "value": 7226.81,
+     "weight": 0.1613
     },
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": 0.00991,
+     "pnl_pct": 0.071708,
      "ticker": "AMZN",
-     "value": 6734.35,
-     "weight": 0.1539
+     "value": 7146.17,
+     "weight": 0.1595
     },
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": 0.004783,
+     "pnl_pct": 0.058095,
      "ticker": "AAPL",
-     "value": 6699.34,
-     "weight": 0.1531
+     "value": 7052.08,
+     "weight": 0.1574
     },
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": -0.045654,
+     "pnl_pct": -0.082056,
      "ticker": "SPCX",
-     "value": 6362.4,
-     "weight": 0.1454
+     "value": 6120.17,
+     "weight": 0.1366
     },
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": -0.104695,
-     "ticker": "NVDA",
-     "value": 5968.58,
-     "weight": 0.1364
-    },
-    {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.144504,
+     "pnl_pct": -0.132148,
      "ticker": "META",
-     "value": 5701.66,
-     "weight": 0.1303
+     "value": 5784.14,
+     "weight": 0.1291
     },
     {
      "entry_date": "2026-10-01",
-     "pnl_pct": -0.172097,
+     "pnl_pct": -0.133111,
+     "ticker": "NVDA",
+     "value": 5779.66,
+     "weight": 0.129
+    },
+    {
+     "entry_date": "2026-10-01",
+     "pnl_pct": -0.145784,
      "ticker": "GOOGL",
-     "value": 5517.87,
-     "weight": 0.1261
+     "value": 5694.53,
+     "weight": 0.1271
     }
    ],
    "cash": 0.0,
@@ -434,377 +485,377 @@
    "index": "NASDAQ 100",
    "live_since": "2026-07-25",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 100753.08,
-   "total_return": 9.075308,
+   "as_of": "2026-11-04",
+   "value": 98120.18,
+   "total_return": 8.812018,
    "positions": [
     {
      "entry_date": "2026-10-27",
-     "pnl_pct": -0.08845,
+     "pnl_pct": -0.10216,
      "shares": 125.9288,
      "ticker": "CRWD",
-     "value": 6519.13,
-     "weight": 0.0647
-    },
-    {
-     "entry_date": "2026-10-19",
-     "pnl_pct": -0.179625,
-     "shares": 25.9499,
-     "ticker": "SNDK",
-     "value": 6185.03,
-     "weight": 0.0614
-    },
-    {
-     "entry_date": "2026-10-14",
-     "pnl_pct": -0.19846,
-     "shares": 25.9499,
-     "ticker": "SNDK",
-     "value": 6185.01,
-     "weight": 0.0614
-    },
-    {
-     "entry_date": "2026-10-09",
-     "pnl_pct": -0.2889,
-     "shares": 25.9495,
-     "ticker": "SNDK",
-     "value": 6184.93,
-     "weight": 0.0614
-    },
-    {
-     "entry_date": "2026-10-06",
-     "pnl_pct": -0.322578,
-     "shares": 25.9494,
-     "ticker": "SNDK",
-     "value": 6184.9,
-     "weight": 0.0614
-    },
-    {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.37079,
-     "shares": 25.9084,
-     "ticker": "SNDK",
-     "value": 6175.12,
-     "weight": 0.0613
+     "value": 6628.98,
+     "weight": 0.0676
     },
     {
      "entry_date": "2026-10-30",
-     "pnl_pct": -0.024424,
+     "pnl_pct": -0.039097,
      "shares": 117.9957,
      "ticker": "CRWD",
-     "value": 6108.44,
-     "weight": 0.0606
+     "value": 6211.37,
+     "weight": 0.0633
+    },
+    {
+     "entry_date": "2026-11-04",
+     "pnl_pct": -0.001498,
+     "shares": 112.4783,
+     "ticker": "CRWD",
+     "value": 5920.94,
+     "weight": 0.0603
+    },
+    {
+     "entry_date": "2026-10-19",
+     "pnl_pct": -0.244525,
+     "shares": 25.95,
+     "ticker": "SNDK",
+     "value": 5880.14,
+     "weight": 0.0599
+    },
+    {
+     "entry_date": "2026-10-14",
+     "pnl_pct": -0.261871,
+     "shares": 25.9499,
+     "ticker": "SNDK",
+     "value": 5880.12,
+     "weight": 0.0599
+    },
+    {
+     "entry_date": "2026-10-09",
+     "pnl_pct": -0.345155,
+     "shares": 25.9495,
+     "ticker": "SNDK",
+     "value": 5880.04,
+     "weight": 0.0599
+    },
+    {
+     "entry_date": "2026-10-06",
+     "pnl_pct": -0.376169,
+     "shares": 25.9494,
+     "ticker": "SNDK",
+     "value": 5880.02,
+     "weight": 0.0599
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": -0.260503,
+     "pnl_pct": -0.253115,
      "shares": 188.9585,
      "ticker": "FTNT",
-     "value": 5121.72,
-     "weight": 0.0508
+     "value": 5340.37,
+     "weight": 0.0544
     }
    ],
-   "cash": 52088.8,
+   "cash": 50498.2,
    "trades_today": []
   },
   "magAB_k8g": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-25",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 119074.71,
-   "total_return": 10.907471,
+   "as_of": "2026-11-04",
+   "value": 122919.67,
+   "total_return": 11.291967,
    "positions": [
     {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.106036,
-     "shares": 84.5719,
-     "ticker": "NVDA",
-     "value": 13999.25,
-     "weight": 0.1176
-    },
-    {
      "entry_date": "2026-10-06",
-     "pnl_pct": -0.13735,
+     "pnl_pct": -0.164729,
      "shares": 82.9651,
      "ticker": "NVDA",
-     "value": 13733.27,
-     "weight": 0.1153
+     "value": 13058.76,
+     "weight": 0.1062
     },
     {
      "entry_date": "2026-10-09",
-     "pnl_pct": -0.015557,
-     "shares": 58.3291,
+     "pnl_pct": 0.036676,
+     "shares": 58.3292,
      "ticker": "AAPL",
-     "value": 15504.3,
-     "weight": 0.1302
+     "value": 16033.92,
+     "weight": 0.1304
     },
     {
      "entry_date": "2026-10-14",
-     "pnl_pct": -0.033698,
+     "pnl_pct": 0.017572,
      "shares": 57.5545,
      "ticker": "AAPL",
-     "value": 15298.4,
-     "weight": 0.1285
+     "value": 15820.98,
+     "weight": 0.1287
     },
     {
      "entry_date": "2026-10-19",
-     "pnl_pct": -0.033642,
+     "pnl_pct": 0.017631,
      "shares": 57.298,
      "ticker": "AAPL",
-     "value": 15230.2,
-     "weight": 0.1279
+     "value": 15750.46,
+     "weight": 0.1281
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": -0.048295,
+     "pnl_pct": 0.002201,
      "shares": 56.7968,
      "ticker": "AAPL",
-     "value": 15096.99,
-     "weight": 0.1268
+     "value": 15612.69,
+     "weight": 0.127
     },
     {
      "entry_date": "2026-10-27",
-     "pnl_pct": -0.045224,
+     "pnl_pct": 0.005435,
      "shares": 57.1855,
      "ticker": "AAPL",
-     "value": 15200.3,
-     "weight": 0.1277
+     "value": 15719.53,
+     "weight": 0.1279
     },
     {
      "entry_date": "2026-10-30",
-     "pnl_pct": -0.038381,
+     "pnl_pct": 0.012641,
      "shares": 56.4771,
      "ticker": "AAPL",
-     "value": 15012.01,
-     "weight": 0.1261
+     "value": 15524.81,
+     "weight": 0.1263
+    },
+    {
+     "entry_date": "2026-11-04",
+     "pnl_pct": -0.001498,
+     "shares": 56.0177,
+     "ticker": "AAPL",
+     "value": 15398.52,
+     "weight": 0.1253
     }
    ],
-   "cash": -0.01,
+   "cash": 0.0,
    "trades_today": []
   },
   "magAB_k8g_cut2": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-29",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 127922.64,
-   "total_return": 11.792264,
+   "as_of": "2026-11-04",
+   "value": 132053.31,
+   "total_return": 12.205331,
    "positions": [
     {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.106036,
-     "shares": 84.5719,
-     "ticker": "NVDA",
-     "value": 15039.47,
-     "weight": 0.1176
-    },
-    {
      "entry_date": "2026-10-06",
-     "pnl_pct": -0.13735,
+     "pnl_pct": -0.164729,
      "shares": 82.9651,
      "ticker": "NVDA",
-     "value": 14753.73,
-     "weight": 0.1153
+     "value": 14029.1,
+     "weight": 0.1062
     },
     {
      "entry_date": "2026-10-09",
-     "pnl_pct": -0.015557,
-     "shares": 58.3291,
+     "pnl_pct": 0.036676,
+     "shares": 58.3292,
      "ticker": "AAPL",
-     "value": 16656.36,
-     "weight": 0.1302
+     "value": 17225.33,
+     "weight": 0.1304
     },
     {
      "entry_date": "2026-10-14",
-     "pnl_pct": -0.033698,
+     "pnl_pct": 0.017572,
      "shares": 57.5545,
      "ticker": "AAPL",
-     "value": 16435.15,
-     "weight": 0.1285
+     "value": 16996.57,
+     "weight": 0.1287
     },
     {
      "entry_date": "2026-10-19",
-     "pnl_pct": -0.033642,
+     "pnl_pct": 0.017631,
      "shares": 57.298,
      "ticker": "AAPL",
-     "value": 16361.89,
-     "weight": 0.1279
+     "value": 16920.81,
+     "weight": 0.1281
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": -0.048295,
+     "pnl_pct": 0.002201,
      "shares": 56.7968,
      "ticker": "AAPL",
-     "value": 16218.78,
-     "weight": 0.1268
+     "value": 16772.81,
+     "weight": 0.127
     },
     {
      "entry_date": "2026-10-27",
-     "pnl_pct": -0.045224,
+     "pnl_pct": 0.005435,
      "shares": 57.1855,
      "ticker": "AAPL",
-     "value": 16329.77,
-     "weight": 0.1277
+     "value": 16887.58,
+     "weight": 0.1279
     },
     {
      "entry_date": "2026-10-30",
-     "pnl_pct": -0.038381,
+     "pnl_pct": 0.012641,
      "shares": 56.4771,
      "ticker": "AAPL",
-     "value": 16127.49,
-     "weight": 0.1261
+     "value": 16678.4,
+     "weight": 0.1263
+    },
+    {
+     "entry_date": "2026-11-04",
+     "pnl_pct": -0.001498,
+     "shares": 56.0177,
+     "ticker": "AAPL",
+     "value": 16542.72,
+     "weight": 0.1253
     }
    ],
-   "cash": 0.0,
+   "cash": -0.01,
    "trades_today": []
   },
   "magAB_k8g_cut4": {
    "index": "NASDAQ 100",
    "live_since": "2026-07-29",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 93483.62,
-   "total_return": 8.348362,
+   "as_of": "2026-11-04",
+   "value": 96502.26,
+   "total_return": 8.650226,
    "positions": [
     {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.106036,
-     "shares": 62.6866,
-     "ticker": "NVDA",
-     "value": 10990.58,
-     "weight": 0.1176
-    },
-    {
      "entry_date": "2026-10-06",
-     "pnl_pct": -0.13735,
+     "pnl_pct": -0.164729,
      "shares": 61.4956,
      "ticker": "NVDA",
-     "value": 10781.77,
-     "weight": 0.1153
+     "value": 10252.22,
+     "weight": 0.1062
     },
     {
      "entry_date": "2026-10-09",
-     "pnl_pct": -0.015557,
+     "pnl_pct": 0.036676,
      "shares": 43.2349,
      "ticker": "AAPL",
-     "value": 12172.17,
-     "weight": 0.1302
+     "value": 12587.97,
+     "weight": 0.1304
     },
     {
      "entry_date": "2026-10-14",
-     "pnl_pct": -0.033698,
+     "pnl_pct": 0.017572,
      "shares": 42.6607,
      "ticker": "AAPL",
-     "value": 12010.52,
-     "weight": 0.1285
+     "value": 12420.8,
+     "weight": 0.1287
     },
     {
      "entry_date": "2026-10-19",
-     "pnl_pct": -0.033642,
-     "shares": 42.4705,
+     "pnl_pct": 0.017631,
+     "shares": 42.4706,
      "ticker": "AAPL",
-     "value": 11956.99,
-     "weight": 0.1279
+     "value": 12365.43,
+     "weight": 0.1281
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": -0.048295,
+     "pnl_pct": 0.002201,
      "shares": 42.0991,
      "ticker": "AAPL",
-     "value": 11852.4,
-     "weight": 0.1268
+     "value": 12257.27,
+     "weight": 0.127
     },
     {
      "entry_date": "2026-10-27",
-     "pnl_pct": -0.045224,
+     "pnl_pct": 0.005435,
      "shares": 42.3872,
      "ticker": "AAPL",
-     "value": 11933.51,
-     "weight": 0.1277
+     "value": 12341.15,
+     "weight": 0.1279
     },
     {
      "entry_date": "2026-10-30",
-     "pnl_pct": -0.038381,
+     "pnl_pct": 0.012641,
      "shares": 41.8621,
      "ticker": "AAPL",
-     "value": 11785.69,
-     "weight": 0.1261
+     "value": 12188.28,
+     "weight": 0.1263
+    },
+    {
+     "entry_date": "2026-11-04",
+     "pnl_pct": -0.001498,
+     "shares": 41.5216,
+     "ticker": "AAPL",
+     "value": 12089.13,
+     "weight": 0.1253
     }
    ],
-   "cash": -0.01,
+   "cash": 0.01,
    "trades_today": []
   },
   "momAB-S1": {
    "index": "NASDAQ 100",
    "live_since": "2026-08-02",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 293568.29,
-   "total_return": 28.356829,
+   "as_of": "2026-11-04",
+   "value": 285097.99,
+   "total_return": 27.509799,
    "positions": [
     {
      "entry_date": "2026-07-15",
-     "pnl_pct": -0.341153,
+     "pnl_pct": -0.362751,
      "shares": 77.7201,
      "ticker": "AMAT",
-     "value": 27206.31,
-     "weight": 0.0927
+     "value": 26332.04,
+     "weight": 0.0924
     },
     {
      "entry_date": "2026-07-29",
-     "pnl_pct": -0.125316,
+     "pnl_pct": -0.15399,
      "shares": 83.7745,
      "ticker": "AMAT",
-     "value": 29325.71,
-     "weight": 0.0999
+     "value": 28383.33,
+     "weight": 0.0996
     },
     {
      "entry_date": "2026-08-12",
-     "pnl_pct": 0.000508,
+     "pnl_pct": 0.010598,
      "shares": 93.196,
      "ticker": "AMD",
-     "value": 41334.93,
-     "weight": 0.1408
+     "value": 41779.7,
+     "weight": 0.1465
     },
     {
      "entry_date": "2026-08-26",
-     "pnl_pct": 0.004669,
+     "pnl_pct": 0.0148,
      "shares": 92.3394,
      "ticker": "AMD",
-     "value": 40955.0,
-     "weight": 0.1395
+     "value": 41395.69,
+     "weight": 0.1452
     },
     {
      "entry_date": "2026-09-10",
-     "pnl_pct": -0.040558,
+     "pnl_pct": -0.030882,
      "shares": 89.9925,
      "ticker": "AMD",
-     "value": 39914.07,
-     "weight": 0.136
+     "value": 40343.55,
+     "weight": 0.1415
     },
     {
      "entry_date": "2026-09-24",
-     "pnl_pct": -0.20969,
-     "shares": 48.0944,
+     "pnl_pct": -0.265024,
+     "shares": 48.0945,
      "ticker": "MU",
-     "value": 37694.33,
-     "weight": 0.1284
+     "value": 35078.59,
+     "weight": 0.123
     },
     {
      "entry_date": "2026-10-08",
-     "pnl_pct": -0.175593,
+     "pnl_pct": -0.233314,
      "shares": 49.7777,
      "ticker": "MU",
-     "value": 39013.6,
-     "weight": 0.1329
+     "value": 36306.32,
+     "weight": 0.1273
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": -0.003118,
+     "pnl_pct": -0.072915,
      "shares": 48.6431,
      "ticker": "MU",
-     "value": 38124.34,
-     "weight": 0.1299
+     "value": 35478.77,
+     "weight": 0.1244
     }
    ],
    "cash": 0.0,
@@ -814,149 +865,149 @@
    "index": "NASDAQ 100",
    "live_since": "2026-08-02",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 259889.03,
-   "total_return": 24.988903,
+   "as_of": "2026-11-04",
+   "value": 244975.67,
+   "total_return": 23.497567,
    "positions": [
     {
      "entry_date": "2026-07-15",
-     "pnl_pct": -0.303509,
+     "pnl_pct": -0.358609,
      "shares": 37.3934,
      "ticker": "SNDK",
-     "value": 27987.61,
-     "weight": 0.1077
+     "value": 25790.26,
+     "weight": 0.1053
     },
     {
      "entry_date": "2026-07-29",
-     "pnl_pct": 0.107239,
+     "pnl_pct": 0.019644,
      "shares": 47.3456,
      "ticker": "SNDK",
-     "value": 35436.47,
-     "weight": 0.1364
+     "value": 32654.3,
+     "weight": 0.1333
     },
     {
      "entry_date": "2026-08-12",
-     "pnl_pct": -0.163251,
+     "pnl_pct": -0.229447,
      "shares": 44.5862,
      "ticker": "SNDK",
-     "value": 33371.1,
-     "weight": 0.1284
+     "value": 30751.08,
+     "weight": 0.1255
     },
     {
      "entry_date": "2026-08-26",
-     "pnl_pct": -0.249796,
+     "pnl_pct": -0.309146,
      "shares": 42.3569,
      "ticker": "SNDK",
-     "value": 31702.59,
-     "weight": 0.122
+     "value": 29213.57,
+     "weight": 0.1193
     },
     {
      "entry_date": "2026-09-10",
-     "pnl_pct": -0.335437,
+     "pnl_pct": -0.388011,
      "shares": 38.4506,
      "ticker": "SNDK",
-     "value": 28778.89,
-     "weight": 0.1107
+     "value": 26519.41,
+     "weight": 0.1083
     },
     {
      "entry_date": "2026-09-24",
-     "pnl_pct": -0.358565,
+     "pnl_pct": -0.40931,
      "shares": 41.0688,
      "ticker": "SNDK",
-     "value": 30738.47,
-     "weight": 0.1183
+     "value": 28325.15,
+     "weight": 0.1156
     },
     {
      "entry_date": "2026-10-08",
-     "pnl_pct": -0.221539,
+     "pnl_pct": -0.213688,
      "shares": 109.2327,
      "ticker": "AMD",
-     "value": 35118.81,
-     "weight": 0.1351
+     "value": 35496.06,
+     "weight": 0.1449
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": 0.026786,
+     "pnl_pct": 0.011343,
      "shares": 226.0931,
      "ticker": "CRWD",
-     "value": 36755.08,
-     "weight": 0.1414
+     "value": 36225.84,
+     "weight": 0.1479
     }
    ],
-   "cash": 0.01,
+   "cash": 0.0,
    "trades_today": []
   },
   "momAB-S3": {
    "index": "NASDAQ 100",
    "live_since": "2026-08-04",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 329432.2,
-   "total_return": 31.94322,
+   "as_of": "2026-11-04",
+   "value": 310528.44,
+   "total_return": 30.052844,
    "positions": [
     {
      "entry_date": "2026-07-15",
-     "pnl_pct": -0.303509,
+     "pnl_pct": -0.358609,
      "shares": 49.0527,
      "ticker": "SNDK",
-     "value": 35476.85,
-     "weight": 0.1077
+     "value": 32691.52,
+     "weight": 0.1053
     },
     {
      "entry_date": "2026-07-29",
-     "pnl_pct": 0.107239,
+     "pnl_pct": 0.019644,
      "shares": 62.1054,
      "ticker": "SNDK",
-     "value": 44917.04,
-     "weight": 0.1363
+     "value": 41390.56,
+     "weight": 0.1333
     },
     {
      "entry_date": "2026-08-12",
-     "pnl_pct": -0.163251,
+     "pnl_pct": -0.229447,
      "shares": 58.4879,
      "ticker": "SNDK",
-     "value": 42300.74,
-     "weight": 0.1284
+     "value": 38979.67,
+     "weight": 0.1255
     },
     {
      "entry_date": "2026-08-26",
-     "pnl_pct": -0.249796,
+     "pnl_pct": -0.309146,
      "shares": 55.5638,
      "ticker": "SNDK",
-     "value": 40185.92,
-     "weight": 0.122
+     "value": 37030.88,
+     "weight": 0.1193
     },
     {
      "entry_date": "2026-09-10",
-     "pnl_pct": -0.335437,
-     "shares": 50.4386,
+     "pnl_pct": -0.388011,
+     "shares": 50.4385,
      "ticker": "SNDK",
-     "value": 36479.14,
-     "weight": 0.1107
+     "value": 33615.12,
+     "weight": 0.1083
     },
     {
      "entry_date": "2026-09-24",
-     "pnl_pct": -0.358565,
+     "pnl_pct": -0.40931,
      "shares": 53.8759,
      "ticker": "SNDK",
-     "value": 38965.19,
-     "weight": 0.1183
+     "value": 35905.99,
+     "weight": 0.1156
     },
     {
      "entry_date": "2026-10-08",
-     "pnl_pct": -0.221539,
+     "pnl_pct": -0.213688,
      "shares": 143.2923,
      "ticker": "AMD",
-     "value": 44516.56,
-     "weight": 0.1351
+     "value": 44994.78,
+     "weight": 0.1449
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": 0.026786,
-     "shares": 296.5912,
+     "pnl_pct": 0.011343,
+     "shares": 296.5911,
      "ticker": "CRWD",
-     "value": 46590.75,
-     "weight": 0.1414
+     "value": 45919.91,
+     "weight": 0.1479
     }
    ],
    "cash": 0.01,
@@ -966,73 +1017,73 @@
    "index": "NASDAQ 100",
    "live_since": "2026-08-04",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 211992.53,
-   "total_return": 20.199253,
+   "as_of": "2026-11-04",
+   "value": 197633.27,
+   "total_return": 18.763327,
    "positions": [
     {
      "entry_date": "2026-07-15",
-     "pnl_pct": -0.303509,
+     "pnl_pct": -0.358609,
      "shares": 29.424,
      "ticker": "SNDK",
-     "value": 23059.9,
-     "weight": 0.1088
+     "value": 21259.34,
+     "weight": 0.1076
     },
     {
      "entry_date": "2026-07-29",
-     "pnl_pct": 0.107239,
+     "pnl_pct": 0.019644,
      "shares": 37.4103,
      "ticker": "SNDK",
-     "value": 29318.85,
-     "weight": 0.1383
+     "value": 27029.59,
+     "weight": 0.1368
     },
     {
      "entry_date": "2026-08-12",
-     "pnl_pct": -0.163251,
+     "pnl_pct": -0.229447,
      "shares": 34.9591,
      "ticker": "SNDK",
-     "value": 27397.79,
-     "weight": 0.1292
+     "value": 25258.53,
+     "weight": 0.1278
     },
     {
      "entry_date": "2026-08-26",
-     "pnl_pct": -0.249796,
-     "shares": 32.783,
+     "pnl_pct": -0.309146,
+     "shares": 32.7829,
      "ticker": "SNDK",
-     "value": 25692.33,
-     "weight": 0.1212
+     "value": 23686.24,
+     "weight": 0.1198
     },
     {
      "entry_date": "2026-09-10",
-     "pnl_pct": -0.335437,
+     "pnl_pct": -0.388011,
      "shares": 27.2311,
      "ticker": "SNDK",
-     "value": 21341.3,
-     "weight": 0.1007
+     "value": 19674.94,
+     "weight": 0.0996
     },
     {
      "entry_date": "2026-09-24",
-     "pnl_pct": -0.358565,
+     "pnl_pct": -0.40931,
      "shares": 32.0011,
      "ticker": "SNDK",
-     "value": 25079.58,
-     "weight": 0.1183
+     "value": 23121.33,
+     "weight": 0.117
     },
     {
      "entry_date": "2026-10-08",
-     "pnl_pct": -0.175593,
+     "pnl_pct": -0.233314,
      "shares": 50.7538,
      "ticker": "MU",
-     "value": 30192.73,
-     "weight": 0.1424
+     "value": 28110.17,
+     "weight": 0.1422
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": 0.026786,
+     "pnl_pct": 0.011343,
      "shares": 175.7122,
      "ticker": "CRWD",
-     "value": 29910.05,
-     "weight": 0.1411
+     "value": 29493.13,
+     "weight": 0.1492
     }
    ],
    "cash": 0.0,
@@ -1042,291 +1093,291 @@
    "index": "NASDAQ 100",
    "live_since": "2026-09-04",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 225837.6,
-   "total_return": 21.58376,
+   "as_of": "2026-11-04",
+   "value": 210540.57,
+   "total_return": 20.054057,
    "positions": [
     {
      "entry_date": "2026-07-15",
-     "pnl_pct": -0.303509,
+     "pnl_pct": -0.358609,
      "shares": 29.424,
      "ticker": "SNDK",
-     "value": 24565.92,
-     "weight": 0.1088
+     "value": 22647.78,
+     "weight": 0.1076
     },
     {
      "entry_date": "2026-07-29",
-     "pnl_pct": 0.107239,
+     "pnl_pct": 0.019644,
      "shares": 37.4103,
      "ticker": "SNDK",
-     "value": 31233.64,
-     "weight": 0.1383
+     "value": 28794.87,
+     "weight": 0.1368
     },
     {
      "entry_date": "2026-08-12",
-     "pnl_pct": -0.163251,
+     "pnl_pct": -0.229447,
      "shares": 34.9591,
      "ticker": "SNDK",
-     "value": 29187.12,
-     "weight": 0.1292
+     "value": 26908.15,
+     "weight": 0.1278
     },
     {
      "entry_date": "2026-08-26",
-     "pnl_pct": -0.249796,
-     "shares": 32.783,
+     "pnl_pct": -0.309146,
+     "shares": 32.7829,
      "ticker": "SNDK",
-     "value": 27370.28,
-     "weight": 0.1212
+     "value": 25233.17,
+     "weight": 0.1198
     },
     {
      "entry_date": "2026-09-10",
-     "pnl_pct": -0.335437,
+     "pnl_pct": -0.388011,
      "shares": 27.2311,
      "ticker": "SNDK",
-     "value": 22735.08,
-     "weight": 0.1007
+     "value": 20959.9,
+     "weight": 0.0996
     },
     {
      "entry_date": "2026-09-24",
-     "pnl_pct": -0.358565,
+     "pnl_pct": -0.40931,
      "shares": 32.0011,
      "ticker": "SNDK",
-     "value": 26717.51,
-     "weight": 0.1183
+     "value": 24631.37,
+     "weight": 0.117
     },
     {
      "entry_date": "2026-10-08",
-     "pnl_pct": -0.175593,
+     "pnl_pct": -0.233314,
      "shares": 50.7538,
      "ticker": "MU",
-     "value": 32164.6,
-     "weight": 0.1424
+     "value": 29946.03,
+     "weight": 0.1422
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": 0.026786,
+     "pnl_pct": 0.011343,
      "shares": 175.7122,
      "ticker": "CRWD",
-     "value": 31863.45,
-     "weight": 0.1411
+     "value": 31419.31,
+     "weight": 0.1492
     }
    ],
-   "cash": 0.0,
+   "cash": -0.01,
    "trades_today": []
   },
   "momAB-good": {
    "index": "NASDAQ 100",
    "live_since": "2026-09-04",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 76243.38,
-   "total_return": 6.624338,
+   "as_of": "2026-11-04",
+   "value": 79417.94,
+   "total_return": 6.941794,
    "positions": [
     {
      "entry_date": "2026-07-15",
-     "pnl_pct": 0.01279,
+     "pnl_pct": 0.066527,
      "shares": 39.013,
      "ticker": "AAPL",
-     "value": 10990.73,
-     "weight": 0.1442
+     "value": 11573.87,
+     "weight": 0.1457
     },
     {
      "entry_date": "2026-07-29",
-     "pnl_pct": -0.019224,
+     "pnl_pct": 0.032814,
      "shares": 34.8802,
      "ticker": "AAPL",
-     "value": 9826.45,
-     "weight": 0.1289
-    },
-    {
-     "entry_date": "2026-08-12",
-     "pnl_pct": -0.063475,
-     "shares": 43.5591,
-     "ticker": "AMZN",
-     "value": 9268.85,
-     "weight": 0.1216
-    },
-    {
-     "entry_date": "2026-08-26",
-     "pnl_pct": -0.1819,
-     "shares": 34.1465,
-     "ticker": "GOOGL",
-     "value": 8116.36,
-     "weight": 0.1065
-    },
-    {
-     "entry_date": "2026-09-10",
-     "pnl_pct": 0.014799,
-     "shares": 35.3236,
-     "ticker": "AAPL",
-     "value": 9951.35,
-     "weight": 0.1305
-    },
-    {
-     "entry_date": "2026-09-24",
-     "pnl_pct": -0.081038,
-     "shares": 51.9918,
-     "ticker": "NVDA",
-     "value": 9121.45,
-     "weight": 0.1196
-    },
-    {
-     "entry_date": "2026-10-08",
-     "pnl_pct": -0.026488,
-     "shares": 35.2666,
-     "ticker": "AAPL",
-     "value": 9935.3,
+     "value": 10347.82,
      "weight": 0.1303
     },
     {
+     "entry_date": "2026-08-12",
+     "pnl_pct": -0.006167,
+     "shares": 43.5591,
+     "ticker": "AMZN",
+     "value": 9836.02,
+     "weight": 0.1239
+    },
+    {
+     "entry_date": "2026-08-26",
+     "pnl_pct": -0.155899,
+     "shares": 34.1465,
+     "ticker": "GOOGL",
+     "value": 8374.31,
+     "weight": 0.1054
+    },
+    {
+     "entry_date": "2026-09-10",
+     "pnl_pct": 0.068642,
+     "shares": 35.3236,
+     "ticker": "AAPL",
+     "value": 10479.35,
+     "weight": 0.132
+    },
+    {
+     "entry_date": "2026-09-24",
+     "pnl_pct": -0.110205,
+     "shares": 51.9918,
+     "ticker": "NVDA",
+     "value": 8831.95,
+     "weight": 0.1112
+    },
+    {
+     "entry_date": "2026-10-08",
+     "pnl_pct": 0.025165,
+     "shares": 35.2666,
+     "ticker": "AAPL",
+     "value": 10462.45,
+     "weight": 0.1317
+    },
+    {
      "entry_date": "2026-10-22",
-     "pnl_pct": -0.048295,
+     "pnl_pct": 0.002201,
      "shares": 32.0635,
      "ticker": "AAPL",
-     "value": 9032.9,
-     "weight": 0.1185
+     "value": 9512.17,
+     "weight": 0.1198
     }
    ],
-   "cash": -0.01,
+   "cash": 0.0,
    "trades_today": []
   },
   "CrCon": {
    "index": "US large-cap tech",
    "live_since": "2026-08-06",
    "start": "2026-08-06",
-   "as_of": "2026-11-03",
-   "value": 9986.44,
-   "total_return": -0.001356,
+   "as_of": "2026-11-04",
+   "value": 9882.58,
+   "total_return": -0.011742,
    "positions": [
     {
      "entry_date": "2026-08-06",
      "entry_price": 312.1408,
-     "pnl_pct": 0.063302,
+     "pnl_pct": 0.119719,
      "shares": 2.6657,
      "target_weight": 0.0833,
      "ticker": "AAPL",
-     "value": 884.76,
-     "weight": 0.0886
+     "value": 931.7,
+     "weight": 0.0943
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 357.5202,
-     "pnl_pct": -0.216744,
+     "pnl_pct": -0.19185,
      "shares": 2.3274,
      "target_weight": 0.0833,
      "ticker": "GOOGL",
-     "value": 651.73,
-     "weight": 0.0653
+     "value": 672.45,
+     "weight": 0.068
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 272.26,
-     "pnl_pct": -0.079226,
+     "pnl_pct": -0.022883,
      "shares": 3.0562,
      "target_weight": 0.0833,
      "ticker": "AMZN",
-     "value": 766.16,
-     "weight": 0.0767
+     "value": 813.04,
+     "weight": 0.0823
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 218.7452,
-     "pnl_pct": -0.055111,
+     "pnl_pct": -0.0851,
      "shares": 3.8039,
      "target_weight": 0.0833,
      "ticker": "NVDA",
-     "value": 786.23,
-     "weight": 0.0787
+     "value": 761.27,
+     "weight": 0.077
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 114.92,
-     "pnl_pct": 0.229638,
+     "pnl_pct": 0.182736,
      "shares": 7.2405,
      "target_weight": 0.0833,
      "ticker": "SPCX",
-     "value": 1023.16,
-     "weight": 0.1025
+     "value": 984.13,
+     "weight": 0.0996
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 319.53,
-     "pnl_pct": 0.247144,
+     "pnl_pct": 0.205489,
      "shares": 2.6041,
      "target_weight": 0.0833,
      "ticker": "TSLA",
-     "value": 1037.73,
-     "weight": 0.1039
+     "value": 1003.07,
+     "weight": 0.1015
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 489.28,
-     "pnl_pct": -0.010996,
+     "pnl_pct": -0.001022,
      "shares": 1.5306,
      "target_weight": 0.075,
      "ticker": "AMD",
-     "value": 740.64,
-     "weight": 0.0742
+     "value": 748.11,
+     "weight": 0.0757
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 417.0811,
-     "pnl_pct": -0.029445,
+     "pnl_pct": -0.051144,
      "shares": 1.7955,
      "target_weight": 0.075,
      "ticker": "TSM",
-     "value": 726.82,
-     "weight": 0.0728
+     "value": 710.57,
+     "weight": 0.0719
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 419.8056,
-     "pnl_pct": -0.208848,
+     "pnl_pct": -0.224689,
      "shares": 1.7839,
      "target_weight": 0.075,
      "ticker": "AVGO",
-     "value": 592.47,
-     "weight": 0.0593
+     "value": 580.61,
+     "weight": 0.0588
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 881.3312,
-     "pnl_pct": -0.029763,
+     "pnl_pct": -0.097695,
      "shares": 0.8497,
      "target_weight": 0.075,
      "ticker": "MU",
-     "value": 726.59,
-     "weight": 0.0728
+     "value": 675.71,
+     "weight": 0.0684
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 155.92,
-     "pnl_pct": 0.124936,
+     "pnl_pct": 0.101206,
      "shares": 4.2693,
      "target_weight": 0.0667,
      "ticker": "PLTR",
-     "value": 748.83,
-     "weight": 0.075
+     "value": 733.04,
+     "weight": 0.0742
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 90.71,
-     "pnl_pct": -0.055451,
+     "pnl_pct": -0.03638,
      "shares": 7.3384,
      "target_weight": 0.0667,
      "ticker": "HOOD",
-     "value": 628.75,
-     "weight": 0.063
+     "value": 641.45,
+     "weight": 0.0649
     },
     {
      "entry_date": "2026-08-06",
      "entry_price": 260.6992,
-     "pnl_pct": 0.01036,
+     "pnl_pct": -0.057458,
      "shares": 2.5534,
      "target_weight": 0.0667,
      "ticker": "CEG",
-     "value": 672.56,
-     "weight": 0.0673
+     "value": 627.42,
+     "weight": 0.0635
     }
    ],
    "cash": 0.01,
@@ -1336,177 +1387,177 @@
    "index": "NASDAQ 100",
    "live_since": "2026-08-08",
    "start": "2026-08-08",
-   "as_of": "2026-11-03",
-   "value": 9116.96,
-   "total_return": -0.088304,
+   "as_of": "2026-11-04",
+   "value": 9293.01,
+   "total_return": -0.070699,
    "positions": [
     {
      "shares": 6.2416,
      "ticker": "NVDA",
-     "value": 1290.09,
-     "weight": 0.1415
+     "value": 1249.14,
+     "weight": 0.1344
     },
     {
      "shares": 1.9688,
      "ticker": "MSFT",
-     "value": 1025.75,
-     "weight": 0.1125
+     "value": 1094.28,
+     "weight": 0.1178
     },
     {
      "shares": 3.6145,
      "ticker": "AMZN",
-     "value": 906.12,
-     "weight": 0.0994
+     "value": 961.57,
+     "weight": 0.1035
     },
     {
      "shares": 2.7151,
      "ticker": "GOOGL",
-     "value": 760.32,
-     "weight": 0.0834
+     "value": 784.48,
+     "weight": 0.0844
     },
     {
      "shares": 2.1899,
      "ticker": "AAPL",
-     "value": 726.82,
-     "weight": 0.0797
+     "value": 765.38,
+     "weight": 0.0824
     },
     {
      "shares": 1.9093,
      "ticker": "AVGO",
-     "value": 634.13,
-     "weight": 0.0696
-    },
-    {
-     "shares": 1.6194,
-     "ticker": "PANW",
-     "value": 567.13,
-     "weight": 0.0622
+     "value": 621.44,
+     "weight": 0.0669
     },
     {
      "shares": 1.2006,
      "ticker": "AMGN",
-     "value": 553.78,
+     "value": 574.45,
+     "weight": 0.0618
+    },
+    {
+     "shares": 1.6194,
+     "ticker": "PANW",
+     "value": 563.63,
      "weight": 0.0607
     },
     {
      "shares": 1.8665,
      "ticker": "CRWD",
-     "value": 456.69,
-     "weight": 0.0501
-    },
-    {
-     "shares": 4.0078,
-     "ticker": "CSCO",
-     "value": 412.68,
-     "weight": 0.0453
+     "value": 449.82,
+     "weight": 0.0484
     },
     {
      "shares": 8.1325,
      "ticker": "CSX",
-     "value": 412.48,
-     "weight": 0.0452
+     "value": 423.3,
+     "weight": 0.0456
     },
     {
      "shares": 0.6617,
      "ticker": "META",
-     "value": 410.91,
-     "weight": 0.0451
+     "value": 416.84,
+     "weight": 0.0449
     },
     {
-     "shares": 0.7021,
-     "ticker": "AMD",
-     "value": 339.73,
-     "weight": 0.0373
+     "shares": 3.9923,
+     "ticker": "CSCO",
+     "value": 413.64,
+     "weight": 0.0445
     },
     {
      "shares": 0.6313,
      "ticker": "VRTX",
-     "value": 335.05,
-     "weight": 0.0368
+     "value": 346.59,
+     "weight": 0.0373
+    },
+    {
+     "shares": 0.7021,
+     "ticker": "AMD",
+     "value": 343.16,
+     "weight": 0.0369
     }
    ],
-   "cash": 285.28,
+   "cash": 285.29,
    "trades_today": []
   },
   "AI Claude 2": {
    "index": "NASDAQ 100",
    "live_since": "2026-08-08",
    "start": "2026-08-08",
-   "as_of": "2026-11-03",
-   "value": 9381.33,
-   "total_return": -0.061867,
+   "as_of": "2026-11-04",
+   "value": 9550.65,
+   "total_return": -0.044935,
    "positions": [
     {
      "shares": 6.9393,
      "ticker": "NVDA",
-     "value": 1434.29,
-     "weight": 0.1529
+     "value": 1388.76,
+     "weight": 0.1454
     },
     {
      "shares": 3.6374,
      "ticker": "AAPL",
-     "value": 1207.25,
-     "weight": 0.1287
-    },
-    {
-     "shares": 2.4585,
-     "ticker": "AMGN",
-     "value": 1133.99,
-     "weight": 0.1209
+     "value": 1271.31,
+     "weight": 0.1331
     },
     {
      "shares": 2.1478,
      "ticker": "MSFT",
-     "value": 1118.97,
-     "weight": 0.1193
+     "value": 1193.74,
+     "weight": 0.125
+    },
+    {
+     "shares": 2.4585,
+     "ticker": "AMGN",
+     "value": 1176.32,
+     "weight": 0.1232
     },
     {
      "shares": 5.4305,
      "ticker": "GILD",
-     "value": 909.45,
-     "weight": 0.0969
+     "value": 947.52,
+     "weight": 0.0992
     },
     {
      "shares": 3.0103,
      "ticker": "CRWD",
-     "value": 736.55,
-     "weight": 0.0785
+     "value": 725.48,
+     "weight": 0.076
     },
     {
      "shares": 1.7688,
      "ticker": "PANW",
-     "value": 619.43,
-     "weight": 0.066
+     "value": 615.61,
+     "weight": 0.0645
     },
     {
      "shares": 1.1383,
      "ticker": "AMD",
-     "value": 550.82,
-     "weight": 0.0587
+     "value": 556.37,
+     "weight": 0.0583
     },
     {
      "shares": 0.8276,
      "ticker": "META",
-     "value": 513.94,
-     "weight": 0.0548
+     "value": 521.37,
+     "weight": 0.0546
     },
     {
      "shares": 1.7761,
      "ticker": "GOOGL",
-     "value": 497.37,
-     "weight": 0.053
+     "value": 513.17,
+     "weight": 0.0537
     },
     {
      "shares": 2.8012,
      "ticker": "FTNT",
-     "value": 358.86,
-     "weight": 0.0383
+     "value": 362.45,
+     "weight": 0.0379
     },
     {
      "shares": 0.365,
      "ticker": "MU",
-     "value": 312.13,
-     "weight": 0.0333
+     "value": 290.27,
+     "weight": 0.0304
     }
    ],
    "cash": -11.72,
@@ -1516,723 +1567,757 @@
    "index": "NASDAQ 100",
    "live_since": "2026-08-08",
    "start": "2026-08-08",
-   "as_of": "2026-11-03",
-   "value": 9640.5,
-   "total_return": -0.03595,
+   "as_of": "2026-11-04",
+   "value": 9895.66,
+   "total_return": -0.010434,
    "positions": [
     {
      "shares": 2.4281,
      "ticker": "MSFT",
-     "value": 1265.01,
-     "weight": 0.1312
-    },
-    {
-     "shares": 5.497,
-     "ticker": "NVDA",
-     "value": 1136.17,
-     "weight": 0.1179
+     "value": 1349.53,
+     "weight": 0.1364
     },
     {
      "shares": 3.9992,
      "ticker": "GOOGL",
-     "value": 1119.91,
-     "weight": 0.1162
+     "value": 1155.5,
+     "weight": 0.1168
+    },
+    {
+     "shares": 5.497,
+     "ticker": "NVDA",
+     "value": 1100.11,
+     "weight": 0.1112
     },
     {
      "shares": 4.0088,
      "ticker": "AMZN",
-     "value": 1004.97,
-     "weight": 0.1042
+     "value": 1066.46,
+     "weight": 0.1078
     },
     {
      "shares": 2.5632,
      "ticker": "AAPL",
-     "value": 850.73,
-     "weight": 0.0882
-    },
-    {
-     "shares": 1.0977,
-     "ticker": "META",
-     "value": 681.73,
-     "weight": 0.0707
+     "value": 895.87,
+     "weight": 0.0905
     },
     {
      "shares": 4.0519,
      "ticker": "GILD",
-     "value": 678.58,
-     "weight": 0.0704
+     "value": 706.98,
+     "weight": 0.0714
+    },
+    {
+     "shares": 1.0977,
+     "ticker": "META",
+     "value": 691.57,
+     "weight": 0.0699
     },
     {
      "shares": 0.6247,
      "ticker": "COST",
-     "value": 636.78,
+     "value": 653.78,
      "weight": 0.0661
     },
     {
      "shares": 1.1794,
      "ticker": "VRTX",
-     "value": 625.99,
-     "weight": 0.0649
+     "value": 647.55,
+     "weight": 0.0654
     },
     {
      "shares": 1.027,
      "ticker": "LIN",
-     "value": 525.35,
+     "value": 538.89,
      "weight": 0.0545
     },
     {
      "shares": 1.4435,
      "ticker": "AVGO",
-     "value": 479.44,
-     "weight": 0.0497
+     "value": 469.84,
+     "weight": 0.0475
     },
     {
      "shares": 0.2918,
      "ticker": "ASML",
-     "value": 452.84,
-     "weight": 0.047
+     "value": 436.55,
+     "weight": 0.0441
     }
    ],
-   "cash": 183.0,
+   "cash": 183.03,
    "trades_today": []
   },
   "AI Claude 4": {
    "index": "NASDAQ 100",
    "live_since": "2026-08-08",
    "start": "2026-08-08",
-   "as_of": "2026-11-03",
-   "value": 10025.82,
-   "total_return": 0.002582,
+   "as_of": "2026-11-04",
+   "value": 10295.08,
+   "total_return": 0.029508,
    "positions": [
     {
      "shares": 3.1482,
      "ticker": "AAPL",
-     "value": 1044.87,
-     "weight": 0.1042
+     "value": 1100.31,
+     "weight": 0.1069
     },
     {
      "shares": 1.9333,
      "ticker": "AMGN",
-     "value": 891.77,
-     "weight": 0.0889
+     "value": 925.07,
+     "weight": 0.0899
     },
     {
      "shares": 16.3802,
      "ticker": "CSX",
-     "value": 830.8,
-     "weight": 0.0829
+     "value": 852.59,
+     "weight": 0.0828
     },
     {
-     "shares": 6.4405,
+     "shares": 6.4156,
      "ticker": "CSCO",
-     "value": 663.18,
-     "weight": 0.0661
+     "value": 664.72,
+     "weight": 0.0646
     },
     {
      "shares": 1.2277,
      "ticker": "LIN",
-     "value": 628.01,
+     "value": 644.21,
      "weight": 0.0626
     },
     {
      "shares": 1.1602,
      "ticker": "VRTX",
-     "value": 615.76,
-     "weight": 0.0614
+     "value": 636.97,
+     "weight": 0.0619
     },
     {
      "shares": 1.1276,
      "ticker": "MSFT",
-     "value": 587.49,
-     "weight": 0.0586
-    },
-    {
-     "shares": 2.7386,
-     "ticker": "NVDA",
-     "value": 566.04,
-     "weight": 0.0565
+     "value": 626.75,
+     "weight": 0.0609
     },
     {
      "shares": 3.267,
      "ticker": "GILD",
-     "value": 547.12,
-     "weight": 0.0546
+     "value": 570.02,
+     "weight": 0.0554
+    },
+    {
+     "shares": 2.7386,
+     "ticker": "NVDA",
+     "value": 548.07,
+     "weight": 0.0532
     },
     {
      "shares": 0.519,
      "ticker": "COST",
-     "value": 529.02,
+     "value": 543.14,
      "weight": 0.0528
     },
     {
      "shares": 4.703,
      "ticker": "SBUX",
-     "value": 492.73,
-     "weight": 0.0491
+     "value": 515.92,
+     "weight": 0.0501
     },
     {
      "shares": 1.817,
      "ticker": "AMZN",
-     "value": 455.51,
-     "weight": 0.0454
+     "value": 483.38,
+     "weight": 0.047
     },
     {
      "shares": 1.9709,
      "ticker": "CTAS",
-     "value": 440.97,
-     "weight": 0.044
+     "value": 451.39,
+     "weight": 0.0438
     }
    ],
-   "cash": 1732.55,
+   "cash": 1732.54,
    "trades_today": []
   },
   "AI Claude 5": {
    "index": "NASDAQ 100",
    "live_since": "2026-08-08",
    "start": "2026-08-08",
-   "as_of": "2026-11-03",
-   "value": 9606.72,
-   "total_return": -0.039328,
+   "as_of": "2026-11-04",
+   "value": 9791.69,
+   "total_return": -0.020831,
    "positions": [
     {
      "shares": 2.5831,
      "ticker": "MSFT",
-     "value": 1345.77,
-     "weight": 0.1401
+     "value": 1435.68,
+     "weight": 0.1466
     },
     {
      "shares": 4.3172,
      "ticker": "GOOGL",
-     "value": 1208.94,
-     "weight": 0.1258
+     "value": 1247.36,
+     "weight": 0.1274
     },
     {
      "shares": 5.682,
      "ticker": "NVDA",
-     "value": 1174.41,
-     "weight": 0.1222
+     "value": 1137.13,
+     "weight": 0.1161
     },
     {
      "shares": 3.6652,
      "ticker": "AMZN",
-     "value": 918.82,
-     "weight": 0.0956
-    },
-    {
-     "shares": 2.2327,
-     "ticker": "AVGO",
-     "value": 741.55,
-     "weight": 0.0772
+     "value": 975.04,
+     "weight": 0.0996
     },
     {
      "shares": 4.4298,
      "ticker": "GILD",
-     "value": 741.86,
-     "weight": 0.0772
+     "value": 772.91,
+     "weight": 0.0789
     },
     {
      "shares": 1.1933,
      "ticker": "META",
-     "value": 741.07,
-     "weight": 0.0771
+     "value": 751.77,
+     "weight": 0.0768
     },
     {
      "shares": 1.3578,
      "ticker": "VRTX",
-     "value": 720.66,
-     "weight": 0.075
+     "value": 745.48,
+     "weight": 0.0761
+    },
+    {
+     "shares": 2.2327,
+     "ticker": "AVGO",
+     "value": 726.7,
+     "weight": 0.0742
     },
     {
      "shares": 1.456,
      "ticker": "AMGN",
-     "value": 671.62,
-     "weight": 0.0699
+     "value": 696.69,
+     "weight": 0.0712
     },
     {
      "shares": 2.3897,
      "ticker": "CEG",
-     "value": 629.45,
-     "weight": 0.0655
+     "value": 587.2,
+     "weight": 0.06
     },
     {
      "shares": 1.3335,
      "ticker": "ADBE",
-     "value": 328.23,
-     "weight": 0.0342
+     "value": 331.35,
+     "weight": 0.0338
     }
    ],
-   "cash": 384.34,
+   "cash": 384.38,
    "trades_today": []
   },
   "AI Claude 6": {
    "index": "NASDAQ 100",
    "live_since": "2026-08-08",
    "start": "2026-08-08",
-   "as_of": "2026-11-03",
-   "value": 9413.04,
-   "total_return": -0.058696,
+   "as_of": "2026-11-04",
+   "value": 9667.27,
+   "total_return": -0.033273,
    "positions": [
     {
      "shares": 3.7046,
      "ticker": "AAPL",
-     "value": 1229.56,
-     "weight": 0.1306
-    },
-    {
-     "shares": 5.7247,
-     "ticker": "NVDA",
-     "value": 1183.23,
-     "weight": 0.1257
+     "value": 1294.79,
+     "weight": 0.1339
     },
     {
      "shares": 2.1,
      "ticker": "MSFT",
-     "value": 1094.06,
-     "weight": 0.1162
+     "value": 1167.16,
+     "weight": 0.1207
+    },
+    {
+     "shares": 5.7247,
+     "ticker": "NVDA",
+     "value": 1145.68,
+     "weight": 0.1185
     },
     {
      "shares": 3.2615,
      "ticker": "AMZN",
-     "value": 817.63,
-     "weight": 0.0869
+     "value": 867.66,
+     "weight": 0.0898
     },
     {
      "shares": 1.7211,
      "ticker": "AMGN",
-     "value": 793.86,
-     "weight": 0.0843
+     "value": 823.49,
+     "weight": 0.0852
     },
     {
      "shares": 2.6968,
      "ticker": "CRWD",
-     "value": 659.84,
-     "weight": 0.0701
+     "value": 649.92,
+     "weight": 0.0672
     },
     {
      "shares": 1.6256,
      "ticker": "PANW",
-     "value": 569.3,
-     "weight": 0.0605
+     "value": 565.79,
+     "weight": 0.0585
     },
     {
      "shares": 1.6237,
      "ticker": "GOOGL",
-     "value": 454.68,
-     "weight": 0.0483
+     "value": 469.13,
+     "weight": 0.0485
     },
     {
      "shares": 1.4279,
      "ticker": "ADP",
-     "value": 422.66,
-     "weight": 0.0449
+     "value": 433.42,
+     "weight": 0.0448
     },
     {
      "shares": 0.6743,
      "ticker": "META",
-     "value": 418.75,
-     "weight": 0.0445
+     "value": 424.8,
+     "weight": 0.0439
     },
     {
      "shares": 0.7728,
      "ticker": "VRTX",
-     "value": 410.15,
-     "weight": 0.0436
+     "value": 424.27,
+     "weight": 0.0439
     },
     {
      "shares": 2.323,
      "ticker": "GILD",
-     "value": 389.03,
-     "weight": 0.0413
+     "value": 405.31,
+     "weight": 0.0419
     },
     {
      "shares": 2.1291,
      "ticker": "ABNB",
-     "value": 355.48,
-     "weight": 0.0378
+     "value": 375.51,
+     "weight": 0.0388
     },
     {
      "shares": 2.1911,
      "ticker": "FTNT",
-     "value": 280.7,
-     "weight": 0.0298
+     "value": 283.5,
+     "weight": 0.0293
     },
     {
      "shares": 0.5565,
      "ticker": "AMD",
-     "value": 269.28,
-     "weight": 0.0286
+     "value": 271.99,
+     "weight": 0.0281
     }
    ],
-   "cash": 64.83,
+   "cash": 64.85,
    "trades_today": []
   },
   "AI Claude 7": {
    "index": "NASDAQ 100",
    "live_since": "2026-08-08",
    "start": "2026-08-08",
-   "as_of": "2026-11-03",
-   "value": 10021.78,
-   "total_return": 0.002178,
+   "as_of": "2026-11-04",
+   "value": 10257.72,
+   "total_return": 0.025772,
    "positions": [
     {
      "shares": 2.7717,
      "ticker": "MSFT",
-     "value": 1444.02,
-     "weight": 0.1441
+     "value": 1540.5,
+     "weight": 0.1502
     },
     {
      "shares": 1.8504,
      "ticker": "META",
-     "value": 1149.18,
-     "weight": 0.1147
+     "value": 1165.78,
+     "weight": 0.1136
     },
     {
      "shares": 5.5221,
      "ticker": "NVDA",
-     "value": 1141.37,
-     "weight": 0.1139
+     "value": 1105.15,
+     "weight": 0.1077
     },
     {
      "shares": 2.1698,
      "ticker": "AMGN",
-     "value": 1000.86,
-     "weight": 0.0999
+     "value": 1038.23,
+     "weight": 0.1012
     },
     {
      "shares": 5.2904,
      "ticker": "GILD",
-     "value": 885.99,
-     "weight": 0.0884
+     "value": 923.07,
+     "weight": 0.09
     },
     {
      "shares": 2.7988,
      "ticker": "GOOGL",
-     "value": 783.76,
-     "weight": 0.0782
+     "value": 808.67,
+     "weight": 0.0788
     },
     {
      "shares": 2.2064,
      "ticker": "ADP",
-     "value": 653.11,
-     "weight": 0.0652
+     "value": 669.72,
+     "weight": 0.0653
     },
     {
      "shares": 1.1452,
      "ticker": "VRTX",
-     "value": 607.84,
-     "weight": 0.0607
+     "value": 628.78,
+     "weight": 0.0613
     },
     {
      "shares": 1.6602,
      "ticker": "AVGO",
-     "value": 551.41,
-     "weight": 0.055
+     "value": 540.37,
+     "weight": 0.0527
     },
     {
      "shares": 3.6691,
      "ticker": "PEP",
-     "value": 503.65,
-     "weight": 0.0503
+     "value": 522.55,
+     "weight": 0.0509
     },
     {
      "shares": 1.2016,
      "ticker": "INTU",
-     "value": 414.23,
-     "weight": 0.0413
+     "value": 428.55,
+     "weight": 0.0418
     }
    ],
-   "cash": 886.36,
+   "cash": 886.35,
    "trades_today": []
   },
   "AI Claude 8": {
    "index": "NASDAQ 100",
    "live_since": "2026-08-08",
    "start": "2026-08-08",
-   "as_of": "2026-11-03",
-   "value": 8686.25,
-   "total_return": -0.131375,
+   "as_of": "2026-11-04",
+   "value": 8705.62,
+   "total_return": -0.129438,
    "positions": [
     {
      "shares": 2.2554,
      "ticker": "MSFT",
-     "value": 1175.03,
-     "weight": 0.1353
+     "value": 1253.54,
+     "weight": 0.144
     },
     {
      "shares": 1.8626,
      "ticker": "META",
-     "value": 1156.75,
-     "weight": 0.1332
+     "value": 1173.46,
+     "weight": 0.1348
     },
     {
      "shares": 3.2617,
      "ticker": "AAPL",
-     "value": 1082.54,
-     "weight": 0.1246
+     "value": 1139.98,
+     "weight": 0.1309
     },
     {
      "shares": 4.9581,
      "ticker": "NVDA",
-     "value": 1024.78,
-     "weight": 0.118
+     "value": 992.25,
+     "weight": 0.114
     },
     {
      "shares": 0.5314,
      "ticker": "ASML",
-     "value": 824.84,
-     "weight": 0.095
+     "value": 795.16,
+     "weight": 0.0913
     },
     {
      "shares": 2.0181,
      "ticker": "TXN",
-     "value": 630.63,
-     "weight": 0.0726
+     "value": 628.61,
+     "weight": 0.0722
     },
     {
      "shares": 0.6495,
      "ticker": "MU",
-     "value": 555.4,
-     "weight": 0.0639
+     "value": 516.51,
+     "weight": 0.0593
     },
     {
      "shares": 1.9981,
      "ticker": "LRCX",
-     "value": 461.0,
-     "weight": 0.0531
+     "value": 442.44,
+     "weight": 0.0508
     },
     {
      "shares": 5.0972,
      "ticker": "INTC",
-     "value": 308.63,
-     "weight": 0.0355
+     "value": 297.01,
+     "weight": 0.0341
     }
    ],
-   "cash": 1466.65,
+   "cash": 1466.66,
    "trades_today": []
   },
   "AI Claude 9": {
    "index": "NASDAQ 100",
    "live_since": "2026-08-08",
    "start": "2026-08-08",
-   "as_of": "2026-11-03",
-   "value": 9108.25,
-   "total_return": -0.089175,
+   "as_of": "2026-11-04",
+   "value": 9059.86,
+   "total_return": -0.094014,
    "positions": [
     {
      "shares": 2.3232,
      "ticker": "MU",
-     "value": 1986.61,
-     "weight": 0.2181
-    },
-    {
-     "shares": 5.9823,
-     "ticker": "NVDA",
-     "value": 1236.49,
-     "weight": 0.1358
+     "value": 1847.51,
+     "weight": 0.2039
     },
     {
      "shares": 2.1777,
      "ticker": "MSFT",
-     "value": 1134.58,
-     "weight": 0.1246
+     "value": 1210.39,
+     "weight": 0.1336
+    },
+    {
+     "shares": 5.9823,
+     "ticker": "NVDA",
+     "value": 1197.24,
+     "weight": 0.1321
     },
     {
      "shares": 2.9196,
      "ticker": "AAPL",
-     "value": 969.02,
-     "weight": 0.1064
+     "value": 1020.43,
+     "weight": 0.1126
     },
     {
      "shares": 3.3586,
      "ticker": "GOOGL",
-     "value": 940.51,
-     "weight": 0.1033
+     "value": 970.4,
+     "weight": 0.1071
     },
     {
      "shares": 3.2364,
      "ticker": "AMZN",
-     "value": 811.32,
-     "weight": 0.0891
+     "value": 860.97,
+     "weight": 0.095
     },
     {
      "shares": 0.5655,
      "ticker": "SNDK",
-     "value": 637.01,
-     "weight": 0.0699
+     "value": 586.61,
+     "weight": 0.0647
     },
     {
      "shares": 1.6602,
      "ticker": "AVGO",
-     "value": 551.41,
-     "weight": 0.0605
+     "value": 540.37,
+     "weight": 0.0596
+    },
+    {
+     "shares": 4.0793,
+     "ticker": "CSCO",
+     "value": 422.66,
+     "weight": 0.0467
     },
     {
      "shares": 7.178,
      "ticker": "INTC",
-     "value": 434.63,
-     "weight": 0.0477
-    },
-    {
-     "shares": 4.0951,
-     "ticker": "CSCO",
-     "value": 421.67,
-     "weight": 0.0463
+     "value": 418.26,
+     "weight": 0.0462
     }
    ],
-   "cash": -15.0,
+   "cash": -14.98,
    "trades_today": []
   },
   "7fh": {
    "index": "S&P 500",
    "live_since": "2026-07-19",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 42896.73,
-   "total_return": 3.290478,
+   "as_of": "2026-11-04",
+   "value": 40858.26,
+   "total_return": 3.086592,
    "positions": [
     {
-     "entry_date": "2026-10-14",
-     "pnl_pct": -0.065976,
-     "shares": 6.9056,
-     "ticker": "MU",
-     "value": 5905.9,
-     "weight": 0.1377
+     "entry_date": "2026-10-19",
+     "pnl_pct": -0.092932,
+     "shares": 11.2702,
+     "ticker": "AMD",
+     "value": 5508.66,
+     "weight": 0.1348
     },
     {
-     "entry_date": "2026-10-30",
-     "pnl_pct": -0.034949,
-     "shares": 6.5197,
+     "entry_date": "2026-10-14",
+     "pnl_pct": -0.131372,
+     "shares": 6.9056,
      "ticker": "MU",
-     "value": 5575.84,
-     "weight": 0.13
+     "value": 5492.4,
+     "weight": 0.1344
     },
     {
      "entry_date": "2026-10-27",
-     "pnl_pct": -0.118717,
+     "pnl_pct": -0.137308,
      "shares": 31.5679,
      "ticker": "PLTR",
-     "value": 5537.01,
-     "weight": 0.1291
+     "value": 5420.21,
+     "weight": 0.1327
     },
     {
-     "entry_date": "2026-10-19",
-     "pnl_pct": -0.101988,
-     "shares": 11.2702,
-     "ticker": "AMD",
-     "value": 5453.66,
-     "weight": 0.1271
+     "entry_date": "2026-10-30",
+     "pnl_pct": -0.102517,
+     "shares": 6.5197,
+     "ticker": "MU",
+     "value": 5185.44,
+     "weight": 0.1269
+    },
+    {
+     "entry_date": "2026-11-04",
+     "pnl_pct": -0.001498,
+     "shares": 26.1883,
+     "ticker": "COHR",
+     "value": 5109.07,
+     "weight": 0.125
     },
     {
      "entry_date": "2026-10-06",
-     "pnl_pct": -0.248449,
+     "pnl_pct": -0.309577,
      "shares": 8.7442,
      "ticker": "STX",
-     "value": 5306.57,
-     "weight": 0.1237
-    },
-    {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.350589,
-     "shares": 7.0918,
-     "ticker": "LITE",
-     "value": 4823.55,
-     "weight": 0.1124
-    },
-    {
-     "entry_date": "2026-10-09",
-     "pnl_pct": -0.384476,
-     "shares": 6.2737,
-     "ticker": "LITE",
-     "value": 4267.13,
-     "weight": 0.0995
+     "value": 4874.96,
+     "weight": 0.1193
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": -0.305755,
+     "pnl_pct": -0.307981,
      "shares": 37.0988,
      "ticker": "NOW",
-     "value": 4049.71,
-     "weight": 0.0944
+     "value": 4036.72,
+     "weight": 0.0988
+    },
+    {
+     "entry_date": "2026-10-09",
+     "pnl_pct": -0.432811,
+     "shares": 6.2737,
+     "ticker": "LITE",
+     "value": 3932.05,
+     "weight": 0.0962
     }
    ],
-   "cash": 1977.36,
-   "trades_today": []
+   "cash": 1298.75,
+   "trades_today": [
+    {
+     "date": "2026-11-04",
+     "side": "BUY",
+     "ticker": "COHR",
+     "shares": 26.1883,
+     "price": 195.09,
+     "cost": 7.66
+    },
+    {
+     "date": "2026-11-04",
+     "side": "SELL",
+     "ticker": "LITE",
+     "shares": 7.0918,
+     "price": 626.75,
+     "cost": 6.67
+    }
+   ]
   },
   "resAB_sp": {
    "index": "S&P 500",
    "live_since": "2026-07-20",
    "start": "2020-01-02",
-   "as_of": "2026-11-03",
-   "value": 59879.7,
-   "total_return": 4.989093,
+   "as_of": "2026-11-04",
+   "value": 58666.96,
+   "total_return": 4.867796,
    "positions": [
     {
-     "entry_date": "2026-10-01",
-     "pnl_pct": -0.081839,
-     "shares": 33.8754,
-     "ticker": "CRWD",
-     "value": 8288.64,
-     "weight": 0.1384
-    },
-    {
      "entry_date": "2026-10-06",
-     "pnl_pct": -0.123885,
+     "pnl_pct": -0.137061,
      "shares": 32.7243,
      "ticker": "CRWD",
-     "value": 8006.98,
-     "weight": 0.1337
-    },
-    {
-     "entry_date": "2026-10-14",
-     "pnl_pct": -0.065976,
-     "shares": 8.8532,
-     "ticker": "MU",
-     "value": 7571.56,
-     "weight": 0.1264
+     "value": 7886.55,
+     "weight": 0.1344
     },
     {
      "entry_date": "2026-10-19",
-     "pnl_pct": 0.007856,
+     "pnl_pct": 0.001639,
      "shares": 21.5299,
      "ticker": "PANW",
-     "value": 7539.75,
-     "weight": 0.1259
+     "value": 7493.25,
+     "weight": 0.1277
     },
     {
      "entry_date": "2026-10-09",
-     "pnl_pct": -0.165014,
+     "pnl_pct": -0.170164,
      "shares": 21.2547,
      "ticker": "PANW",
-     "value": 7443.39,
-     "weight": 0.1243
+     "value": 7397.48,
+     "weight": 0.1261
+    },
+    {
+     "entry_date": "2026-11-04",
+     "pnl_pct": -0.001498,
+     "shares": 30.4296,
+     "ticker": "CRWD",
+     "value": 7333.53,
+     "weight": 0.125
     },
     {
      "entry_date": "2026-10-27",
-     "pnl_pct": -0.137588,
+     "pnl_pct": -0.12889,
      "shares": 14.6401,
      "ticker": "AMD",
-     "value": 7084.36,
-     "weight": 0.1183
+     "value": 7155.8,
+     "weight": 0.122
     },
     {
      "entry_date": "2026-10-30",
-     "pnl_pct": -0.042838,
+     "pnl_pct": -0.033186,
      "shares": 14.4747,
      "ticker": "AMD",
-     "value": 7004.3,
-     "weight": 0.117
+     "value": 7074.94,
+     "weight": 0.1206
+    },
+    {
+     "entry_date": "2026-10-14",
+     "pnl_pct": -0.131372,
+     "shares": 8.8532,
+     "ticker": "MU",
+     "value": 7041.44,
+     "weight": 0.12
     },
     {
      "entry_date": "2026-10-22",
-     "pnl_pct": -0.003118,
+     "pnl_pct": -0.072915,
      "shares": 8.1156,
      "ticker": "MU",
-     "value": 6940.72,
-     "weight": 0.1159
+     "value": 6454.76,
+     "weight": 0.11
     }
    ],
-   "cash": 0.0,
-   "trades_today": []
+   "cash": 829.21,
+   "trades_today": [
+    {
+     "date": "2026-11-04",
+     "side": "BUY",
+     "ticker": "CRWD",
+     "shares": 30.4296,
+     "price": 241.0,
+     "cost": 11.0
+    },
+    {
+     "date": "2026-11-04",
+     "side": "SELL",
+     "ticker": "CRWD",
+     "shares": 33.8754,
+     "price": 241.0,
+     "cost": 12.25
+    }
+   ]
   }
  }
 }
