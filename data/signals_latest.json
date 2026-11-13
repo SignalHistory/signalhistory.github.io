@@ -9,8 +9,8 @@
    "live_since": "2026-07-16",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 38916.76,
-   "total_return": 2.892406,
+   "value": 38916.79,
+   "total_return": 2.892408,
    "positions": [
     {
      "entry_date": "2026-11-09",
@@ -77,7 +77,7 @@
      "weight": 0.1088
     }
    ],
-   "cash": 1204.07,
+   "cash": 1204.1,
    "trades_today": [
     {
      "date": "2026-11-12",
@@ -102,8 +102,8 @@
    "live_since": "2026-07-16",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 71796.94,
-   "total_return": 6.18104,
+   "value": 71796.93,
+   "total_return": 6.181039,
    "positions": [
     {
      "entry_date": "2026-10-27",
@@ -148,9 +148,9 @@
     {
      "entry_date": "2026-10-22",
      "pnl_pct": -0.252249,
-     "shares": 60.2834,
+     "shares": 60.2833,
      "ticker": "FTNT",
-     "value": 7809.11,
+     "value": 7809.1,
      "weight": 0.1088
     },
     {
@@ -195,15 +195,15 @@
    "live_since": "2026-07-20",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 182762.64,
-   "total_return": 17.276264,
+   "value": 182762.71,
+   "total_return": 17.276271,
    "positions": [
     {
      "entry_date": "2026-10-27",
      "pnl_pct": -0.143625,
      "shares": 125.7272,
      "ticker": "CRWD",
-     "value": 12202.21,
+     "value": 12202.22,
      "weight": 0.0668
     },
     {
@@ -217,9 +217,9 @@
     {
      "entry_date": "2026-11-04",
      "pnl_pct": -0.047611,
-     "shares": 112.2982,
+     "shares": 112.2983,
      "ticker": "CRWD",
-     "value": 10898.89,
+     "value": 10898.9,
      "weight": 0.0596
     },
     {
@@ -251,7 +251,7 @@
      "pnl_pct": -0.001498,
      "shares": 41.5627,
      "ticker": "AMD",
-     "value": 10270.92,
+     "value": 10270.93,
      "weight": 0.0562
     },
     {
@@ -263,7 +263,7 @@
      "weight": 0.0534
     }
    ],
-   "cash": 97319.24,
+   "cash": 97319.28,
    "trades_today": []
   },
   "resAB": {
@@ -271,8 +271,8 @@
    "live_since": "2026-07-20",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 117287.91,
-   "total_return": 10.730991,
+   "value": 117287.9,
+   "total_return": 10.730989,
    "positions": [
     {
      "entry_date": "2026-10-19",
@@ -295,7 +295,7 @@
      "pnl_pct": -0.047611,
      "shares": 62.2974,
      "ticker": "CRWD",
-     "value": 14320.3,
+     "value": 14320.29,
      "weight": 0.1221
     },
     {
@@ -385,7 +385,7 @@
      "entry_date": "2026-10-01",
      "pnl_pct": 0.019891,
      "ticker": "MSFT",
-     "value": 7563.2,
+     "value": 7563.19,
      "weight": 0.155
     },
     {
@@ -417,7 +417,7 @@
      "weight": 0.1094
     }
    ],
-   "cash": -0.01,
+   "cash": 0.0,
    "trades_today": []
   },
   "MAG200": {
@@ -486,8 +486,8 @@
    "live_since": "2026-07-25",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 90257.82,
-   "total_return": 8.025782,
+   "value": 90257.83,
+   "total_return": 8.025783,
    "positions": [
     {
      "entry_date": "2026-10-27",
@@ -508,7 +508,7 @@
     {
      "entry_date": "2026-11-04",
      "pnl_pct": -0.047611,
-     "shares": 112.2982,
+     "shares": 112.2983,
      "ticker": "CRWD",
      "value": 0.0,
      "weight": 0.0
@@ -554,7 +554,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 90257.82,
+   "cash": 90257.83,
    "trades_today": []
   },
   "magAB_k8g": {
@@ -562,8 +562,8 @@
    "live_since": "2026-07-25",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 119857.19,
-   "total_return": 10.985719,
+   "value": 119857.16,
+   "total_return": 10.985716,
    "positions": [
     {
      "entry_date": "2026-10-14",
@@ -630,7 +630,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 119857.19,
+   "cash": 119857.16,
    "trades_today": []
   },
   "magAB_k8g_cut2": {
@@ -638,8 +638,8 @@
    "live_since": "2026-07-29",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 128763.28,
-   "total_return": 11.876328,
+   "value": 128763.24,
+   "total_return": 11.876324,
    "positions": [
     {
      "entry_date": "2026-10-14",
@@ -706,7 +706,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 128763.28,
+   "cash": 128763.24,
    "trades_today": []
   },
   "magAB_k8g_cut4": {
@@ -714,8 +714,8 @@
    "live_since": "2026-07-29",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 94097.96,
-   "total_return": 8.409796,
+   "value": 94098.0,
+   "total_return": 8.4098,
    "positions": [
     {
      "entry_date": "2026-10-14",
@@ -736,7 +736,7 @@
     {
      "entry_date": "2026-10-22",
      "pnl_pct": 0.018373,
-     "shares": 42.131,
+     "shares": 42.1311,
      "ticker": "AAPL",
      "value": 0.0,
      "weight": 0.0
@@ -782,7 +782,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 94097.96,
+   "cash": 94098.0,
    "trades_today": []
   },
   "momAB-S1": {
@@ -790,8 +790,8 @@
    "live_since": "2026-08-02",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 238328.52,
-   "total_return": 22.832852,
+   "value": 238328.54,
+   "total_return": 22.832854,
    "positions": [
     {
      "entry_date": "2026-07-29",
@@ -804,7 +804,7 @@
     {
      "entry_date": "2026-08-12",
      "pnl_pct": 0.210162,
-     "shares": 93.196,
+     "shares": 93.1961,
      "ticker": "AMD",
      "value": 0.0,
      "weight": 0.0
@@ -812,7 +812,7 @@
     {
      "entry_date": "2026-08-26",
      "pnl_pct": 0.215194,
-     "shares": 92.3394,
+     "shares": 92.3395,
      "ticker": "AMD",
      "value": 0.0,
      "weight": 0.0
@@ -828,7 +828,7 @@
     {
      "entry_date": "2026-09-24",
      "pnl_pct": -0.262057,
-     "shares": 48.0944,
+     "shares": 48.0945,
      "ticker": "MU",
      "value": 0.0,
      "weight": 0.0
@@ -858,7 +858,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 238328.52,
+   "cash": 238328.54,
    "trades_today": []
   },
   "momAB-S2": {
@@ -866,13 +866,13 @@
    "live_since": "2026-08-02",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 196878.75,
-   "total_return": 18.687875,
+   "value": 196878.85,
+   "total_return": 18.687885,
    "positions": [
     {
      "entry_date": "2026-07-29",
      "pnl_pct": -0.078585,
-     "shares": 47.3456,
+     "shares": 47.3457,
      "ticker": "SNDK",
      "value": 0.0,
      "weight": 0.0
@@ -880,7 +880,7 @@
     {
      "entry_date": "2026-08-12",
      "pnl_pct": -0.30368,
-     "shares": 44.5861,
+     "shares": 44.5862,
      "ticker": "SNDK",
      "value": 0.0,
      "weight": 0.0
@@ -896,7 +896,7 @@
     {
      "entry_date": "2026-09-10",
      "pnl_pct": -0.446968,
-     "shares": 38.4506,
+     "shares": 38.4507,
      "ticker": "SNDK",
      "value": 0.0,
      "weight": 0.0
@@ -912,7 +912,7 @@
     {
      "entry_date": "2026-10-08",
      "pnl_pct": -0.058414,
-     "shares": 109.2327,
+     "shares": 109.2328,
      "ticker": "AMD",
      "value": 0.0,
      "weight": 0.0
@@ -920,7 +920,7 @@
     {
      "entry_date": "2026-10-22",
      "pnl_pct": -0.035363,
-     "shares": 225.8314,
+     "shares": 225.8315,
      "ticker": "CRWD",
      "value": 0.0,
      "weight": 0.0
@@ -928,13 +928,13 @@
     {
      "entry_date": "2026-11-05",
      "pnl_pct": 0.056748,
-     "shares": 157.8966,
+     "shares": 157.8967,
      "ticker": "CRWD",
      "value": 0.0,
      "weight": 0.0
     }
    ],
-   "cash": 196878.75,
+   "cash": 196878.85,
    "trades_today": []
   },
   "momAB-S3": {
@@ -942,8 +942,8 @@
    "live_since": "2026-08-04",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 249562.12,
-   "total_return": 23.956212,
+   "value": 249562.26,
+   "total_return": 23.956226,
    "positions": [
     {
      "entry_date": "2026-07-29",
@@ -972,7 +972,7 @@
     {
      "entry_date": "2026-09-10",
      "pnl_pct": -0.446968,
-     "shares": 50.4385,
+     "shares": 50.4386,
      "ticker": "SNDK",
      "value": 0.0,
      "weight": 0.0
@@ -980,7 +980,7 @@
     {
      "entry_date": "2026-09-24",
      "pnl_pct": -0.466215,
-     "shares": 53.8759,
+     "shares": 53.876,
      "ticker": "SNDK",
      "value": 0.0,
      "weight": 0.0
@@ -988,7 +988,7 @@
     {
      "entry_date": "2026-10-08",
      "pnl_pct": -0.058414,
-     "shares": 143.2923,
+     "shares": 143.2924,
      "ticker": "AMD",
      "value": 0.0,
      "weight": 0.0
@@ -996,7 +996,7 @@
     {
      "entry_date": "2026-10-22",
      "pnl_pct": -0.035363,
-     "shares": 296.2478,
+     "shares": 296.248,
      "ticker": "CRWD",
      "value": 0.0,
      "weight": 0.0
@@ -1004,13 +1004,13 @@
     {
      "entry_date": "2026-11-05",
      "pnl_pct": 0.056748,
-     "shares": 207.1546,
+     "shares": 207.1548,
      "ticker": "CRWD",
      "value": 0.0,
      "weight": 0.0
     }
    ],
-   "cash": 249562.12,
+   "cash": 249562.26,
    "trades_today": []
   },
   "momAB-S4": {
@@ -1018,8 +1018,8 @@
    "live_since": "2026-08-04",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 158976.94,
-   "total_return": 14.897694,
+   "value": 158977.03,
+   "total_return": 14.897703,
    "positions": [
     {
      "entry_date": "2026-07-29",
@@ -1040,7 +1040,7 @@
     {
      "entry_date": "2026-08-26",
      "pnl_pct": -0.375701,
-     "shares": 32.7829,
+     "shares": 32.783,
      "ticker": "SNDK",
      "value": 0.0,
      "weight": 0.0
@@ -1064,7 +1064,7 @@
     {
      "entry_date": "2026-10-08",
      "pnl_pct": -0.230219,
-     "shares": 50.7538,
+     "shares": 50.7539,
      "ticker": "MU",
      "value": 0.0,
      "weight": 0.0
@@ -1072,7 +1072,7 @@
     {
      "entry_date": "2026-10-22",
      "pnl_pct": -0.035363,
-     "shares": 175.5061,
+     "shares": 175.5062,
      "ticker": "CRWD",
      "value": 0.0,
      "weight": 0.0
@@ -1086,7 +1086,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 158976.94,
+   "cash": 158977.03,
    "trades_today": []
   },
   "momAB-safe": {
@@ -1094,8 +1094,8 @@
    "live_since": "2026-09-04",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 169359.62,
-   "total_return": 15.935962,
+   "value": 169359.7,
+   "total_return": 15.93597,
    "positions": [
     {
      "entry_date": "2026-07-29",
@@ -1116,7 +1116,7 @@
     {
      "entry_date": "2026-08-26",
      "pnl_pct": -0.375701,
-     "shares": 32.7829,
+     "shares": 32.783,
      "ticker": "SNDK",
      "value": 0.0,
      "weight": 0.0
@@ -1140,7 +1140,7 @@
     {
      "entry_date": "2026-10-08",
      "pnl_pct": -0.230219,
-     "shares": 50.7538,
+     "shares": 50.7539,
      "ticker": "MU",
      "value": 0.0,
      "weight": 0.0
@@ -1148,7 +1148,7 @@
     {
      "entry_date": "2026-10-22",
      "pnl_pct": -0.035363,
-     "shares": 175.5061,
+     "shares": 175.5062,
      "ticker": "CRWD",
      "value": 0.0,
      "weight": 0.0
@@ -1162,7 +1162,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 169359.62,
+   "cash": 169359.7,
    "trades_today": []
   },
   "momAB-good": {
@@ -1170,8 +1170,8 @@
    "live_since": "2026-09-04",
    "start": "2020-01-02",
    "as_of": "2026-11-12",
-   "value": 77281.74,
-   "total_return": 6.728174,
+   "value": 77281.72,
+   "total_return": 6.728172,
    "positions": [
     {
      "entry_date": "2026-07-29",
@@ -1238,7 +1238,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 77281.74,
+   "cash": 77281.72,
    "trades_today": []
   },
   "CrCon": {
