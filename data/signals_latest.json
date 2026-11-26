@@ -9,15 +9,15 @@
    "live_since": "2026-07-16",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 32115.76,
-   "total_return": 2.212178,
+   "value": 32115.74,
+   "total_return": 2.212176,
    "positions": [
     {
      "entry_date": "2026-10-30",
      "pnl_pct": -0.112786,
      "shares": 27.8392,
      "ticker": "PLTR",
-     "value": 4554.22,
+     "value": 4554.21,
      "weight": 0.1418
     },
     {
@@ -77,7 +77,7 @@
      "weight": 0.1025
     }
    ],
-   "cash": 746.32,
+   "cash": 746.31,
    "trades_today": [
     {
      "date": "2026-11-25",
@@ -102,15 +102,15 @@
    "live_since": "2026-07-16",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 65839.47,
-   "total_return": 5.585181,
+   "value": 65839.48,
+   "total_return": 5.585182,
    "positions": [
     {
      "entry_date": "2026-10-30",
      "pnl_pct": -0.028052,
      "shares": 27.5362,
      "ticker": "PANW",
-     "value": 9806.73,
+     "value": 9806.74,
      "weight": 0.1489
     },
     {
@@ -184,7 +184,7 @@
      "date": "2026-11-25",
      "side": "SELL",
      "ticker": "FTNT",
-     "shares": 60.2833,
+     "shares": 60.2834,
      "price": 134.96,
      "cost": 12.2
     }
@@ -195,8 +195,8 @@
    "live_since": "2026-07-20",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 171316.96,
-   "total_return": 16.131696,
+   "value": 171316.91,
+   "total_return": 16.131691,
    "positions": [
     {
      "entry_date": "2026-10-27",
@@ -243,7 +243,7 @@
      "pnl_pct": -0.048244,
      "shares": 94.1502,
      "ticker": "CRWD",
-     "value": 9131.84,
+     "value": 9131.83,
      "weight": 0.0533
     },
     {
@@ -263,7 +263,7 @@
      "weight": 0.0455
     }
    ],
-   "cash": 91725.3,
+   "cash": 91725.26,
    "trades_today": []
   },
   "resAB": {
@@ -271,8 +271,8 @@
    "live_since": "2026-07-20",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 103754.61,
-   "total_return": 9.377406,
+   "value": 103754.6,
+   "total_return": 9.377405,
    "positions": [
     {
      "entry_date": "2026-10-30",
@@ -339,7 +339,7 @@
      "weight": 0.0981
     }
    ],
-   "cash": 4382.36,
+   "cash": 4382.35,
    "trades_today": [
     {
      "date": "2026-11-25",
@@ -371,7 +371,7 @@
      "entry_date": "2026-10-01",
      "pnl_pct": 0.077289,
      "ticker": "AAPL",
-     "value": 7988.85,
+     "value": 7988.84,
      "weight": 0.1745
     },
     {
@@ -417,7 +417,7 @@
      "weight": 0.1047
     }
    ],
-   "cash": 0.0,
+   "cash": 0.01,
    "trades_today": []
   },
   "MAG200": {
@@ -425,8 +425,8 @@
    "live_since": "2026-07-24",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 42773.81,
-   "total_return": 3.277381,
+   "value": 42773.8,
+   "total_return": 3.27738,
    "positions": [
     {
      "entry_date": "2026-10-01",
@@ -478,7 +478,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 42773.81,
+   "cash": 42773.8,
    "trades_today": []
   },
   "momAB_k8ug": {
@@ -486,8 +486,8 @@
    "live_since": "2026-07-25",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 90300.13,
-   "total_return": 8.030013,
+   "value": 90300.11,
+   "total_return": 8.030011,
    "positions": [
     {
      "entry_date": "2026-10-27",
@@ -554,7 +554,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 90300.13,
+   "cash": 90300.11,
    "trades_today": []
   },
   "magAB_k8g": {
@@ -562,8 +562,8 @@
    "live_since": "2026-07-25",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 119857.28,
-   "total_return": 10.985728,
+   "value": 119857.2,
+   "total_return": 10.98572,
    "positions": [
     {
      "entry_date": "2026-10-27",
@@ -630,7 +630,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 119857.28,
+   "cash": 119857.2,
    "trades_today": []
   },
   "magAB_k8g_cut2": {
@@ -638,8 +638,8 @@
    "live_since": "2026-07-29",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 128763.39,
-   "total_return": 11.876339,
+   "value": 128763.29,
+   "total_return": 11.876329,
    "positions": [
     {
      "entry_date": "2026-10-27",
@@ -706,7 +706,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 128763.39,
+   "cash": 128763.29,
    "trades_today": []
   },
   "magAB_k8g_cut4": {
@@ -714,8 +714,8 @@
    "live_since": "2026-07-29",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 94098.05,
-   "total_return": 8.409805,
+   "value": 94097.97,
+   "total_return": 8.409797,
    "positions": [
     {
      "entry_date": "2026-10-27",
@@ -782,7 +782,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 94098.05,
+   "cash": 94097.97,
    "trades_today": []
   },
   "momAB-S1": {
@@ -790,8 +790,8 @@
    "live_since": "2026-08-02",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 238328.53,
-   "total_return": 22.832853,
+   "value": 238328.51,
+   "total_return": 22.832851,
    "positions": [
     {
      "entry_date": "2026-08-12",
@@ -858,7 +858,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 238328.53,
+   "cash": 238328.51,
    "trades_today": []
   },
   "momAB-S2": {
@@ -866,8 +866,8 @@
    "live_since": "2026-08-02",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 196878.84,
-   "total_return": 18.687884,
+   "value": 196878.82,
+   "total_return": 18.687882,
    "positions": [
     {
      "entry_date": "2026-10-08",
@@ -880,7 +880,7 @@
     {
      "entry_date": "2026-10-22",
      "pnl_pct": -0.121684,
-     "shares": 225.6441,
+     "shares": 225.6442,
      "ticker": "CRWD",
      "value": 0.0,
      "weight": 0.0
@@ -902,7 +902,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 196878.84,
+   "cash": 196878.82,
    "trades_today": []
   },
   "momAB-S3": {
@@ -910,8 +910,8 @@
    "live_since": "2026-08-04",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 249562.24,
-   "total_return": 23.956224,
+   "value": 249562.19,
+   "total_return": 23.956219,
    "positions": [
     {
      "entry_date": "2026-10-08",
@@ -932,7 +932,7 @@
     {
      "entry_date": "2026-11-05",
      "pnl_pct": -0.037815,
-     "shares": 207.1547,
+     "shares": 207.1546,
      "ticker": "CRWD",
      "value": 0.0,
      "weight": 0.0
@@ -946,7 +946,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 249562.24,
+   "cash": 249562.19,
    "trades_today": []
   },
   "momAB-S4": {
@@ -954,8 +954,8 @@
    "live_since": "2026-08-04",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 158977.02,
-   "total_return": 14.897702,
+   "value": 158977.0,
+   "total_return": 14.8977,
    "positions": [
     {
      "entry_date": "2026-10-08",
@@ -990,7 +990,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 158977.02,
+   "cash": 158977.0,
    "trades_today": []
   },
   "momAB-safe": {
@@ -998,8 +998,8 @@
    "live_since": "2026-09-04",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 169359.68,
-   "total_return": 15.935968,
+   "value": 169359.66,
+   "total_return": 15.935966,
    "positions": [
     {
      "entry_date": "2026-10-08",
@@ -1034,7 +1034,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 169359.68,
+   "cash": 169359.66,
    "trades_today": []
   },
   "momAB-good": {
@@ -1042,8 +1042,8 @@
    "live_since": "2026-09-04",
    "start": "2020-01-02",
    "as_of": "2026-11-25",
-   "value": 77281.77,
-   "total_return": 6.728177,
+   "value": 77281.75,
+   "total_return": 6.728175,
    "positions": [
     {
      "entry_date": "2026-08-12",
@@ -1110,7 +1110,7 @@
      "weight": 0.0
     }
    ],
-   "cash": 77281.77,
+   "cash": 77281.75,
    "trades_today": []
   },
   "CrCon": {
